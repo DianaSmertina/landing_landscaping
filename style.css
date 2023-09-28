@@ -24,16 +24,10 @@ button {
     border-style: none;
 }
 
-li {
-
-    leading-trim: both;
-    text-edge: cap;
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%;
+h2{
+    margin: 0;
 }
+
 
 ul {
     display: inline-flex;
@@ -53,15 +47,22 @@ li a {
     text-align: center;
     justify-content: center;
     align-items: center;
+    padding: 1.1875rem 0.94rem;
+
+    leading-trim: both;
+    text-edge: cap;
 
     text-decoration: none;
     color: var(--unnamed, #000);
-    padding: 1.1875rem 0.94rem;
-    
-   
+
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
 }
 
-li:nth-last-child(1) a{
+li:nth-last-child(1) a {
     padding: 1.1875rem 0 1.1875rem 0.94rem;
 }
 
@@ -69,25 +70,27 @@ header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 3.88rem;
+    user-select: none;
 }
 
 .logo {
-    width: 3.375rem;
-    height: 3.375rem;
+    width: 6.125rem;
+    height: 6.125rem;
 }
 
 .main-title {
     font-family: 'Tektur', cursive;
     color: var(--unnamed, #000);
     text-align: center;
-    font-size: 10.625rem;
+    /* font-size: 10.625rem; */
+    font-size: 10.625vw;
     font-style: normal;
     font-weight: 500;
     line-height: 72%;
     /* 14.875rem */
     letter-spacing: -0.2125rem;
     text-transform: uppercase;
-
+    user-select: none;
 
     margin-left: -0.625rem;
     padding-right: 0.625rem;
@@ -116,21 +119,28 @@ header {
 }
 
 .image-mainscreen {
-    width: 11.375rem;
-    height: 7.5rem;
+    /* width: 11.375rem; */
+    width: 11.375vw;
+    /* height: 7.5rem; */
+    height: 7.5vw;
+    background: no-repeat center/100% url(/img/grass2.jpg);
 }
 
-.image-mainscreen {
-    background: url(/img/grass1.jpg), lightgray 50% / cover no-repeat;
+.image-mainscreen {}
+
+.image-mainscreen.first-img {
+    background-image: url(/img/grass1.jpg);
 }
 
 
 .image-mainscreen.second-img {
-    background: url(/img/grass2.jpg), lightgray 50% / cover no-repeat;
+    background-image: url(/img/grass2.jpg);
 }
 
 .main-text-title {
-    width: 24.0625rem;
+    /* order: 3;
+    visibility: collapse; */
+    width: 23.125vw;
     align-self: start;
 
     color: var(--lan-black, var(--unnamed, #000));
@@ -142,6 +152,7 @@ header {
     font-weight: 400;
     line-height: 110%;
     /* 1.2375rem */
+    user-select: none;
 }
 
 .request-call-btn {
@@ -167,13 +178,133 @@ header {
 }
 
 .second-block {
+    margin-top: 1.25rem;
     display: flex;
+    user-select: none;
 }
 
-.four-images{
+.four-images {
+    width: 25%;
+    height: 40.6875vw;
+}
+
+
+.four-images picture img {
+    display: block;
+    width: 100%;
+
+}
+
+.bottom-shadow {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 1.56vw;
+    padding-bottom: 3.38vw;
+    position: relative;
+    bottom: 24vw;
+    background: linear-gradient(0deg, #1F1F1F 4.21%, rgba(31, 31, 31, 0.00) 95.08%);
+    height: 24vw;
+    z-index: 2;
+}
+
+.bottom-shadow p:nth-child(1) {
+    color: var(--unnamed, #FFF);
+
+    leading-trim: both;
+    text-edge: cap;
+    font-family: 'Tektur', cursive;
+    font-size: 7.5vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 80%;
+    /* 10.5rem */
+
+    margin-bottom: 0.8rem;
+
+}
+
+.bottom-shadow p:nth-child(2) {
+    color: var(--unnamed, #FFF);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.03331rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    /* 1.44669rem */
+}
+
+
+.third-block {
+    margin-top: 7.81rem;
+}
+
+.third-block h2 {
+    color: var(--unnamed, #000);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Tektur;
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    /* 4.5rem */
+    text-transform: uppercase;
+    padding-left: 24.375vw;
+}
+
+
+.services {
+    /* border-spacing:20px; */
+    border-collapse: collapse;
+}
+.services th,
+td {
+    /* border: [border-width || border-style || border-color] | inherit */
+    /* border-width верх-низ лево-право */
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+
+    /* width: 23.125rem; */
     width: 25%;
 }
 
-.four-images picture img{
-    
+.services th{
+    padding-left: 0px;
+    padding-right: 15px;
+    vertical-align: top;
+    text-align: start;
+}
+
+.services td:nth-child(2) {
+    /* visibility: collapse; */
+    padding-left: 5px;
+    /* 0.3125rem */
+    padding-right: 10px;
+}
+
+.services td:nth-child(3) {
+    /* visibility: collapse; */
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.services td:nth-child(4) {
+    padding-left: 15px;
+    padding-right: 0px;
+    vertical-align: top;
+    text-align: end;
+}
+
+.services tr:{
+    background-color: #00ffff;
+}
+
+picture img {
+    display: block;
+    /* width: 23.125rem;
+    height: 15.625rem; */
+    width: 100%;
 }

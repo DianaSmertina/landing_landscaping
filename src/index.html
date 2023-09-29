@@ -12,8 +12,12 @@
     <!--НА СКОЛЬКО ПОЛЬЗОВАТЕЛИ МОГУТ УВЕЛИЧИВАТЬ/УМЕНЬШАТЬ ШИРИНУ СТРАНИЦЫ-->
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <!--ОТКЛЮЧИТЬ МАСШТАБИРОВАНИЕ-->
-    <link rel="icon" type="image/x-icon" href="" />
+    <!-- <link rel="icon" type="image/x-icon" href="" /> -->
     <link rel="stylesheet" href="style.css" />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+        />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap" rel="stylesheet">
@@ -21,7 +25,7 @@
 
 <body>
     <header>
-        <img class="logo" src="img/logo.svg" alt="Куст" />
+        <img class="logo" src="./img/logo.svg" alt="Куст" />
         <ul>
             <li><a href="#">Преимущества</a></li>
             <li><a href="#">Отзывы</a></li>
@@ -60,7 +64,7 @@
                 <picture>
                     <!-- <source media="(min-width:650px)" srcset="/img/120variants.jpg">
                     <source media="(min-width:465px)" srcset="#"> -->
-                    <img src="/img/120variants.jpg" alt="120 Вариантов озеленения">
+                    <img src="./img/120variants.jpg" alt="120 Вариантов озеленения">
                 </picture>
                 <div class="bottom-shadow">
                     <p>120</p>
@@ -71,7 +75,7 @@
                 <picture>
                     <!-- <source media="(min-width:650px)" srcset="/img/120variants.jpg">
                     <source media="(min-width:465px)" srcset="#"> -->
-                    <img src="/img/85styles.jpg" alt="85 стилей дизайна">
+                    <img src="./img/85styles.jpg" alt="85 стилей дизайна">
                 </picture>
                 <div class="bottom-shadow">
                     <p>85</p>
@@ -82,7 +86,7 @@
                 <picture>
                     <!-- <source media="(min-width:650px)" srcset="/img/120variants.jpg">
                     <source media="(min-width:465px)" srcset="#"> -->
-                    <img src="/img/50solution.jpg" alt="50 инженерных решений">
+                    <img src="./img/50solution.jpg" alt="50 инженерных решений">
                 </picture>
                 <div class="bottom-shadow">
                     <p>50</p>
@@ -91,9 +95,9 @@
             </div>
             <div class="four-images">
                 <picture>
-                    <source media="(min-width:650px)" srcset="/img/120variants.jpg">
+                    <!-- <source media="(min-width:650px)" srcset="./img/120variants.jpg"> -->
                     <!-- <source media="(min-width:465px)" srcset="#"> -->
-                    <img src="/img/12years.jpg" alt="12 лет опыта">
+                    <img src="./img/12years.jpg" alt="12 лет опыта">
                 </picture>
                 <div class="bottom-shadow">
                     <p>12</p>
@@ -112,7 +116,7 @@
 
                     <td>
                         <picture>
-                            <img src="img/system-auto-poliv.jpg" alt="Система автоматического полива">
+                            <img src="./img/system-auto-poliv.jpg" alt="Система автоматического полива">
                         </picture>
                     </td>
 
@@ -166,6 +170,77 @@
 
                 </div>
            </div> -->
+        </div>
+
+        <div class="my-slider">
+            <div class="slider-block">
+                <div class="slider-wrapper">
+                    <img
+                        src="./img/slider/slider1.png"
+                        alt="Исследование участка"
+                        class="slider-image"
+                    />
+                    <div class="slider-info">
+                        <p class="slider-num">(1)</p>
+                        <p class="slider-title">
+                            Исследование участка, его рельефа, почвы,
+                            климатических условий
+                        </p>
+                        <p class="slider-text">
+                            Это первоначальный шаг, позволяющий учесть
+                            факторы при планировании, перед любым
+                            ландшафтным проектом. Изучение участка поможет
+                            понять его особенности, а также определить зоны
+                            солнечной и тенистой экспозиции, особенности
+                            почвы и топографии.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-block">
+                <div class="slider-wrapper">
+                    <img
+                        src="./img/slider/slider2.png"
+                        alt="План благоустройства"
+                        class="slider-image"
+                    />
+                    <div class="slider-info">
+                        <p class="slider-num">(2)</p>
+                        <p class="slider-title">План благоустройства</p>
+                        <p class="slider-text">
+                            После исследования участка составляется план, на
+                            котором отмечаются все элементы, такие как
+                            дорожки, площадки, фонтаны, растения и другие
+                            объекты. Это поможет создать целостную и
+                            гармоничную композицию.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-block">
+                <div class="slider-wrapper">
+                    <img
+                        src="./img/slider/slider3.png"
+                        alt="Исследование участка"
+                        class="slider-image"
+                    />
+                    <div class="slider-info">
+                        <p class="slider-num">(3)</p>
+                        <p class="slider-title">
+                            Исследование участка, его рельефа, почвы,
+                            климатических условий
+                        </p>
+                        <p class="slider-text">
+                            Это первоначальный шаг, позволяющий учесть
+                            факторы при планировании, перед любым
+                            ландшафтным проектом. Изучение участка поможет
+                            понять его особенности, а также определить зоны
+                            солнечной и тенистой экспозиции, особенности
+                            почвы и топографии.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer>

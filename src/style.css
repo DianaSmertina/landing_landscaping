@@ -1,4 +1,4 @@
-@import url(color.css);
+@import url("./colors.css");
 
 * {
     box-sizing: border-box;
@@ -123,18 +123,18 @@ header {
     width: 11.375vw;
     /* height: 7.5rem; */
     height: 7.5vw;
-    background: no-repeat center/100% url(/img/grass2.jpg);
+    background: no-repeat center/100% url("./img/grass2.jpg");
 }
 
 .image-mainscreen {}
 
 .image-mainscreen.first-img {
-    background-image: url(/img/grass1.jpg);
+    background-image: url("./img/grass1.jpg");
 }
 
 
 .image-mainscreen.second-img {
-    background-image: url(/img/grass2.jpg);
+    background-image: url("./img/grass2.jpg");
 }
 
 .main-text-title {
@@ -298,7 +298,7 @@ td {
     text-align: end;
 }
 
-.services tr:{
+.services tr{
     background-color: #00ffff;
 }
 
@@ -307,4 +307,73 @@ picture img {
     /* width: 23.125rem;
     height: 15.625rem; */
     width: 100%;
+}
+
+
+
+
+
+
+
+.slider-block {
+    height: 345px;
+    background-color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.slider-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 31px;
+}
+
+.my-slider {
+    margin-bottom: 20px;
+}
+
+.slider-image {
+    display: block;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.slider-info {
+    margin-top: 30px;
+}
+
+.slider-num {
+    color: #e95232;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Tektur", cursive;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.slider-title {
+    margin-bottom: 20px;
+    margin-right: 59px;
+    color: var(--unnamed, #000);
+    font-family: "Tektur", cursive;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    text-transform: uppercase;
+}
+
+.slider-text {
+    margin-right: 31px;
+    color: #282a36;
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
 }

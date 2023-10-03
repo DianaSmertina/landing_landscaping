@@ -165,22 +165,17 @@ header {
     width: 25%;
 }
 
-.slider-block {
+.slider-container {
     height: 345px;
-    background-color: white;
-    margin-right: 20px;
     cursor: pointer;
 }
 
-.slider-wrapper {
+.slider-container__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 31px;
-}
-
-.my-slider {
-    margin-bottom: 20px;
+    background-color: white;
 }
 
 .slider-image {
@@ -196,7 +191,6 @@ header {
 
 .slider-num {
     color: #e95232;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: "Tektur", cursive;
     font-size: 40px;
     font-style: normal;
@@ -226,4 +220,38 @@ header {
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
+}
+
+.slider-block {
+    position: relative;
+}
+
+.slider-block__drag-circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #e95232;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.drag-text {
+    color: #fff;
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.slider-block:active .slider-block__drag-circle {
+    visibility: hidden;
 }

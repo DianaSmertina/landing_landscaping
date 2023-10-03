@@ -165,12 +165,16 @@ header {
     width: 25%;
 }
 
-.slider-container {
+.stages {
+    margin-bottom: 40px;
+}
+
+.stages-container {
     height: 345px;
     cursor: pointer;
 }
 
-.slider-container__wrapper {
+.stages-container__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -178,18 +182,18 @@ header {
     background-color: white;
 }
 
-.slider-image {
+.stages-image {
     display: block;
     object-fit: contain;
     max-width: 100%;
     max-height: 100%;
 }
 
-.slider-info {
+.stages-info {
     margin-top: 30px;
 }
 
-.slider-num {
+.stages-num {
     color: #e95232;
     font-family: "Tektur", cursive;
     font-size: 40px;
@@ -200,7 +204,7 @@ header {
     margin-bottom: 40px;
 }
 
-.slider-title {
+.stages-title {
     margin-bottom: 20px;
     margin-right: 59px;
     color: var(--unnamed, #000);
@@ -212,7 +216,7 @@ header {
     text-transform: uppercase;
 }
 
-.slider-text {
+.stages-text {
     margin-right: 31px;
     color: #282a36;
     font-family: "Inter";
@@ -222,11 +226,13 @@ header {
     line-height: 120%;
 }
 
-.slider-block {
+.stages,
+.reviews {
     position: relative;
 }
 
-.slider-block__drag-circle {
+.stages__drag-circle,
+.reviews__drag-circle {
     position: absolute;
     width: 100px;
     height: 100px;
@@ -236,6 +242,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.stages__drag-circle {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -252,6 +261,70 @@ header {
     text-align: center;
 }
 
-.slider-block:active .slider-block__drag-circle {
+.stages:active .stages__drag-circle, .reviews:active .reviews__drag-circle {
     visibility: hidden;
+}
+
+.reviews-container {
+    cursor: pointer;
+}
+
+.reviews-container__wrapper {
+    background-color: white;
+    height: 393px;
+    position: relative;
+}
+
+.reviews-container__wrapper * {
+    margin: 0 30px;
+}
+
+.reviews-username {
+    color: #000;
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+.reviews-secondary {
+    color: #727272;
+    font-family: "Inter";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.reviews-text {
+    color: #000;
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.reviews-link {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.reviews-image {
+    margin-bottom: 20px;
+}
+
+.reviews-date {
+    position: absolute;
+    padding-bottom: 30px;
+    bottom: 0;
+}
+
+.reviews__drag-circle {
+    top: 73px;
+    right: 25%;
+    transform: translate(50%, 0);
 }

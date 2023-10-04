@@ -352,6 +352,13 @@ header {
     gap: 20px;
 }
 
+.examples .btn-outline {
+    background: none;
+    border: 1px solid #E95232;
+    color: #E95232;
+    margin-top: 50px;
+}
+
 .big-example {
     display: flex;
     justify-content: space-between;

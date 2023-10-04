@@ -169,6 +169,10 @@ header {
     margin-bottom: 40px;
 }
 
+.stages .slider__title, .reviews .slider__title {
+    margin-bottom: 22px;
+}
+
 .stages-container {
     height: 345px;
     cursor: ew-resize;
@@ -245,9 +249,9 @@ header {
 }
 
 .stages__drag-circle {
-    top: 50%;
+    top: 200px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
 }
 
 .drag-text {
@@ -261,7 +265,8 @@ header {
     text-align: center;
 }
 
-.stages:active .stages__drag-circle, .reviews:active .reviews__drag-circle {
+.stages:active .stages__drag-circle,
+.reviews:active .reviews__drag-circle {
     visibility: hidden;
 }
 
@@ -324,7 +329,137 @@ header {
 }
 
 .reviews__drag-circle {
-    top: 73px;
+    top: 175px;
     right: 25%;
     transform: translate(50%, 0);
 }
+
+.title-secondary {
+    color: #000;
+    font-family: "Tektur";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    text-transform: uppercase;
+    margin: 120px 390px 40px;
+    
+}
+
+.examples__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.big-example {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    gap: 81px;
+}
+
+.big-example__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.big-example__bottom {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+}
+
+.example-block__text {
+    color: #000;
+    font-family: "Tektur";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.example-block__img {
+    max-width: 100%;
+}
+
+.example-big-img {
+    height: 610px;
+    width: 370px;
+    max-width: 370px;
+}
+
+.advantage__num {
+    color: #e95232;
+    font-family: "Tektur";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.advantage__text {
+    color: #000;
+    font-family: "Tektur";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.advantage {
+    width: 369px;
+    height: 124px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    gap: 5px;
+    position: absolute;
+}
+
+.advantages__wrapper {
+    position: relative;
+    height: 690px;
+    margin-top: 70px;
+}
+
+.advantages__grass {
+    position: absolute;
+    display: block;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.advantage-1 {
+    left: 11.7%;
+    top: 12.2%;
+}
+
+.advantage-2 {
+    left: 61.88%;
+}
+
+.advantage-3 {
+    left: 12.6%;
+    top: 64%;
+}
+
+.advantage-4 {
+    left: 68.77%;
+    top: 47.5%;
+}
+
+.advantage-5 {
+    left: 52%;
+    bottom: 0;
+}
+

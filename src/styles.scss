@@ -1,4 +1,5 @@
-@import url("./colors.css");
+@import "./constants.scss";
+@import "./buttons.scss";
 
 * {
     box-sizing: border-box;
@@ -10,7 +11,7 @@ html {
 
 body {
     margin: 0.5rem 1.88rem 0rem 1.88rem;
-    background-color: #f3f3f3;
+    background-color: $background-color;
 }
 
 p {
@@ -26,19 +27,17 @@ button {
 }
 
 li {
-    leading-trim: both;
-    text-edge: cap;
     font-family: "Inter", sans-serif;
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
     line-height: 110%;
+    text-transform: capitalize;
 }
 
 ul {
     display: inline-flex;
     align-items: flex-start;
-
     list-style-type: none;
     margin-block-start: 0em;
     margin-block-end: 0em;
@@ -52,9 +51,8 @@ li a {
     text-align: center;
     justify-content: center;
     align-items: center;
-
     text-decoration: none;
-    color: var(--unnamed, #000);
+    color: $dark-color;
     padding: 1.1875rem 0.94rem;
 }
 
@@ -62,10 +60,15 @@ li:nth-last-child(1) a {
     padding: 1.1875rem 0 1.1875rem 0.94rem;
 }
 
+.content-wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 3.88rem;
+    margin-bottom: 36px;
 }
 
 .logo {
@@ -75,34 +78,36 @@ header {
 
 .main-title {
     font-family: "Tektur", cursive;
-    color: var(--unnamed, #000);
+    color: $dark-color;
     text-align: center;
     font-size: 10.625rem;
     font-style: normal;
     font-weight: 500;
     line-height: 72%;
-    /* 14.875rem */
     letter-spacing: -0.2125rem;
     text-transform: uppercase;
-
     margin-left: -0.625rem;
     padding-right: 0.625rem;
 }
 
 .main-title.orange {
-    color: var(--unnamed, #e95232);
+    color: $brand-color;
 }
 
 .main-title.third-row-text {
     margin-left: 0.625rem;
 }
 
-.row-mainscreen-title {
+.title-block__row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
 
-    margin: 2.62rem 0rem;
+.title-block-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
 }
 
 .container-img {
@@ -115,61 +120,114 @@ header {
     height: 7.5rem;
 }
 
-.image-mainscreen {
-    background: url("./img/grass1.jpg"), lightgray 50% / cover no-repeat;
+.first-img {
+    background: url("./img/main-title1.png"), lightgray 50% / cover no-repeat;
 }
 
-.image-mainscreen.second-img {
-    background: url("./img/grass2.jpg"), lightgray 50% / cover no-repeat;
+.second-img {
+    background: url("./img/main-title2.png"), lightgray 50% / cover no-repeat;
+}
+
+.third-img {
+    background: url("./img/main-title3.png"), lightgray 50% / cover no-repeat;
+}
+
+.forth-img {
+    background: url("./img/main-title4.png"), lightgray 50% / cover no-repeat;
 }
 
 .main-text-title {
     width: 24.0625rem;
     align-self: start;
-
-    color: var(--lan-black, var(--unnamed, #000));
-    leading-trim: both;
-    text-edge: cap;
+    color: $dark-color;
     font-family: "Inter", sans-serif;
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
     line-height: 110%;
-    /* 1.2375rem */
 }
 
-.request-call-btn {
-    width: 100%;
-    height: 3.75rem;
-
-    border-radius: 0.625rem;
-    background: var(--unnamed, #e95232);
-
-    color: var(--unnamed, #fff);
-    leading-trim: both;
-    text-edge: cap;
-    font-family: "Tektur", cursive;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-    /* 1.2rem */
-    text-transform: uppercase;
+.title-block-btn {
+    margin: 20px 0;
 }
 
-.second-block {
+.statistics {
     display: flex;
 }
 
-.four-images {
+.stat-data {
+    max-width: 385px;
     width: 25%;
+    height: 651px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.statistics__first {
+    background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.2) 0%,
+            rgba(0, 0, 0, 0.2) 100%
+        ),
+        url("./img/120variants.png"), lightgray 50% / cover no-repeat;
+}
+
+.statistics__second {
+    background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.2) 0%,
+            rgba(0, 0, 0, 0.2) 100%
+        ),
+        url("./img/85styles.png"), lightgray 50% / cover no-repeat;
+}
+
+.statistics__third {
+    background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.2) 0%,
+            rgba(0, 0, 0, 0.2) 100%
+        ),
+        url("./img/50solution.png"), lightgray 50% / cover no-repeat;
+}
+
+.statistics__forth {
+    background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.2) 0%,
+            rgba(0, 0, 0, 0.2) 100%
+        ),
+        url("./img/12years.png"), lightgray 50% / cover no-repeat;
+}
+
+.stat-data__caption {
+    margin-left: 25px;
+}
+
+.stat-number {
+    color: $light-color;
+    font-family: "Tektur";
+    font-size: 120px;
+    font-weight: 600;
+    line-height: 84px;
+}
+
+.stat-description {
+    color: $light-color;
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 52px;
 }
 
 .stages {
     margin-bottom: 40px;
 }
 
-.stages .slider__title, .reviews .slider__title {
+.stages .slider__title,
+.reviews .slider__title {
     margin-bottom: 22px;
 }
 
@@ -198,7 +256,7 @@ header {
 }
 
 .stages-num {
-    color: #e95232;
+    color: $brand-color;
     font-family: "Tektur", cursive;
     font-size: 40px;
     font-style: normal;
@@ -211,7 +269,7 @@ header {
 .stages-title {
     margin-bottom: 20px;
     margin-right: 59px;
-    color: var(--unnamed, #000);
+    color: $dark-color;
     font-family: "Tektur", cursive;
     font-size: 20px;
     font-style: normal;
@@ -241,7 +299,7 @@ header {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: #e95232;
+    background-color: $brand-color;
     z-index: 2;
     display: flex;
     justify-content: center;
@@ -255,7 +313,7 @@ header {
 }
 
 .drag-text {
-    color: #fff;
+    color: $light-color;
     font-family: "Inter";
     font-size: 16px;
     font-style: normal;
@@ -285,7 +343,7 @@ header {
 }
 
 .reviews-username {
-    color: #000;
+    color: $dark-color;
     font-family: "Inter";
     font-size: 16px;
     font-style: normal;
@@ -305,7 +363,7 @@ header {
 }
 
 .reviews-text {
-    color: #000;
+    color: $dark-color;
     font-family: "Inter";
     font-size: 16px;
     font-style: normal;
@@ -335,7 +393,7 @@ header {
 }
 
 .title-secondary {
-    color: #000;
+    color: $dark-color;
     font-family: "Tektur";
     font-size: 60px;
     font-style: normal;
@@ -343,7 +401,6 @@ header {
     line-height: 42px;
     text-transform: uppercase;
     margin: 120px 390px 40px;
-    
 }
 
 .examples__wrapper {
@@ -352,10 +409,7 @@ header {
     gap: 20px;
 }
 
-.examples .btn-outline {
-    background: none;
-    border: 1px solid #E95232;
-    color: #E95232;
+.examples-btn {
     margin-top: 50px;
 }
 
@@ -379,7 +433,7 @@ header {
 }
 
 .example-block__text {
-    color: #000;
+    color: $dark-color;
     font-family: "Tektur";
     font-size: 20px;
     font-style: normal;
@@ -400,17 +454,17 @@ header {
 }
 
 .advantage__num {
-    color: #e95232;
+    color: $brand-color;
     font-family: "Tektur";
     font-size: 20px;
     font-style: normal;
-    font-weight: 500;
+
     line-height: 100%;
     text-transform: uppercase;
 }
 
 .advantage__text {
-    color: #000;
+    color: $dark-color;
     font-family: "Tektur";
     font-size: 20px;
     font-style: normal;
@@ -469,4 +523,3 @@ header {
     left: 52%;
     bottom: 0;
 }
-

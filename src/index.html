@@ -11,526 +11,533 @@
             name="viewport"
             content="width=device-width, maximum-scale=3, minimum-scale=0.9"
         />
-        <!--НА СКОЛЬКО ПОЛЬЗОВАТЕЛИ МОГУТ УВЕЛИЧИВАТЬ/УМЕНЬШАТЬ ШИРИНУ СТРАНИЦЫ-->
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-        <!--ОТКЛЮЧИТЬ МАСШТАБИРОВАНИЕ-->
-        <!-- <link rel="icon" type="image/x-icon" href="icons/tkpb.png" /> -->
-        <link rel="stylesheet" href="styles.css" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap"
-            rel="stylesheet"
-        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Tektur:wght@400;500;600&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <header>
-            <img class="logo" src="./img/logo.svg" alt="За стеклом" />
-            <ul>
-                <li><a href="#">Преимущества</a></li>
-                <li><a href="#">Отзывы</a></li>
-                <li><a href="#">Услуги</a></li>
-                <li><a href="#">Примеры работ</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </header>
-        <main>
-            <div class="first-block">
-                <div class="row-mainscreen-title">
-                    <p class="main-title">Инженерное</p>
-                    <div class="container-img">
-                        <div class="image-mainscreen first-img"></div>
-                        <div class="image-mainscreen second-img"></div>
-                    </div>
-                </div>
-                <div class="row-mainscreen-title">
-                    <p class="main-title orange">благоустройство</p>
-                </div>
-                <div class="row-mainscreen-title">
-                    <div class="container-img">
-                        <p class="main-text-title">
-                            От сложных инженерных работ<br />
-                            до уютного участка —<br />
-                            превратите свою мечту в реальность!
-                        </p>
-                        <div class="image-mainscreen first-img"></div>
-                        <div class="image-mainscreen second-img"></div>
-                    </div>
-                    <p class="main-title third-row-text">участка</p>
-                </div>
-                <button class="request-call-btn">Заказать звонок</button>
-            </div>
-            <div class="second-block">
-                <div class="subblock four-images">
-                    <img />
-                    <p>120</p>
-                    <p>Вариантов озеленения</p>
-                </div>
-                <div class="subblock four-images">
-                    <p>85</p>
-                    <p>Стилей дизайна</p>
-                </div>
-                <div class="subblock four-images">
-                    <p>50</p>
-                    <p>Инженерных решений</p>
-                </div>
-                <div class="subblock four-images">
-                    <p>12</p>
-                    <p>Лет опыта</p>
-                </div>
-            </div>
-            <div class="examples">
-                <p class="title-secondary">Примеры работ</p>
-                <div class="examples__wrapper">
-                    <div class="small-example">
-                        <div class="example-block">
-                            <img class="example-block__img example-big-img" src="./img/example1.png" alt="Участок счастья" />
-                            <p class="example-block__text">Проект “Участок счастья”</p>
+        <div class="content-wrapper">
+            <header>
+                <img class="logo" src="./img/logo.svg" alt="За стеклом" />
+                <ul>
+                    <li><a href="#">Преимущества</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Примеры работ</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </header>
+            <main>
+                <div class="title-block">
+                    <div class="title-block-wrapper">
+                        <div class="title-block__row">
+                            <p class="main-title">Инженерное</p>
+                            <div class="container-img">
+                                <div class="image-mainscreen first-img"></div>
+                                <div class="image-mainscreen second-img"></div>
+                            </div>
+                        </div>
+                        <div class="title-block__row">
+                            <p class="main-title orange">благоустройство</p>
+                        </div>
+                        <div class="title-block__row">
+                            <div class="container-img">
+                                <p class="main-text-title">
+                                    От сложных инженерных работ<br />
+                                    до уютного участка —<br />
+                                    превратите свою мечту в реальность!
+                                </p>
+                                <div class="image-mainscreen third-img"></div>
+                                <div class="image-mainscreen forth-img"></div>
+                            </div>
+                            <p class="main-title third-row-text">участка</p>
                         </div>
                     </div>
-                    <div class="big-example">
-                        <div class="big-example__top">
+                    <button class="btn title-block-btn">Заказать звонок</button>
+                </div>
+                <div class="statistics">
+                    <div class="stat-data statistics__first">
+                        <div class="stat-data__caption">
+                            <p class="stat-number">120</p>
+                            <p class="stat-description">Вариантов озеленения</p>
+                        </div>
+                    </div>
+                    <div class="stat-data statistics__second">
+                        <div class="stat-data__caption">
+                            <p class="stat-number">85</p>
+                            <p class="stat-description">Стилей дизайна</p>
+                        </div>
+                    </div>
+                    <div class="stat-data statistics__third">
+                        <div class="stat-data__caption">
+                            <p class="stat-number">50</p>
+                            <p class="stat-description">Инженерных решений</p>
+                        </div>
+                    </div>
+                    <div class="stat-data statistics__forth">
+                        <div class="stat-data__caption">
+                            <p class="stat-number">12</p>
+                            <p class="stat-description">Лет опыта</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services">
+                    <p class="title-secondary">Что мы делаем</p>
+                </div>
+                <div class="examples">
+                    <p class="title-secondary">Примеры работ</p>
+                    <div class="examples__wrapper">
+                        <div class="small-example">
                             <div class="example-block">
-                                <img class="example-block__img" src="./img/example2.png" alt="Рай у шатра" />
-                                <p class="example-block__text">Проект “Рай у шатра”</p>
-                            </div>
-                            <div class="example-block">
-                                <img class="example-block__img" src="./img/example3.png" alt="Дерево и стиль" />
-                                <p class="example-block__text">Проект “Дерево и стиль”</p>
+                                <img class="example-block__img example-big-img" src="./img/example1.png" alt="Участок счастья" />
+                                <p class="example-block__text">Проект “Участок счастья”</p>
                             </div>
                         </div>
-                        <div class="big-example__bottom">
-                            <div class="example-block">
-                                <img class="example-block__img" src="./img/example4.png" alt="Уют" />
-                                <p class="example-block__text">Проект “Уют”</p>
+                        <div class="big-example">
+                            <div class="big-example__top">
+                                <div class="example-block">
+                                    <img class="example-block__img" src="./img/example2.png" alt="Рай у шатра" />
+                                    <p class="example-block__text">Проект “Рай у шатра”</p>
+                                </div>
+                                <div class="example-block">
+                                    <img class="example-block__img" src="./img/example3.png" alt="Дерево и стиль" />
+                                    <p class="example-block__text">Проект “Дерево и стиль”</p>
+                                </div>
                             </div>
-                            <div class="example-block">
-                                <img class="example-block__img" src="./img/example5.png" alt="На веранде" />
-                                <p class="example-block__text">Проект “на веранде”</p>
+                            <div class="big-example__bottom">
+                                <div class="example-block">
+                                    <img class="example-block__img" src="./img/example4.png" alt="Уют" />
+                                    <p class="example-block__text">Проект “Уют”</p>
+                                </div>
+                                <div class="example-block">
+                                    <img class="example-block__img" src="./img/example5.png" alt="На веранде" />
+                                    <p class="example-block__text">Проект “на веранде”</p>
+                                </div>
+                                <div class="example-block">
+                                    <img class="example-block__img" src="./img/example6.png" alt="Луговой сад" />
+                                    <p class="example-block__text">Проект “Луговой сад”</p>
+                                </div>
                             </div>
-                            <div class="example-block">
-                                <img class="example-block__img" src="./img/example6.png" alt="Луговой сад" />
-                                <p class="example-block__text">Проект “Луговой сад”</p>
+                        </div>
+                    </div>
+                    <button class="examples-btn btn">Заказать проект</button>
+                </div>
+                <div class="advantages">
+                    <p class="title-secondary">Преимущества</p>
+                    <div class="advantages__wrapper">
+                        <img class="advantages__grass" src="./img/grass-circle.png" alt="Луг" />
+                        <div class="advantage advantage-1">
+                            <p class="advantage__num">(1)</p>
+                            <p class="advantage__text">Послегарантийное обслуживание</p>
+                        </div>
+                        <div class="advantage advantage-2">
+                            <p class="advantage__num">(2)</p>
+                            <p class="advantage__text">Экономия времени и усилий</p>
+                        </div>
+                        <div class="advantage advantage-3">
+                            <p class="advantage__num">(3)</p>
+                            <p class="advantage__text">Качественные материалы и растения</p>
+                        </div>
+                        <div class="advantage advantage-4">
+                            <p class="advantage__num">(4)</p>
+                            <p class="advantage__text">Повышение привлекальности участка</p>
+                        </div>
+                        <div class="advantage advantage-5">
+                            <p class="advantage__num">(5)</p>
+                            <p class="advantage__text">Выстоит в непогоду</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="stages">
+                    <p class="title-secondary slider__title">Как мы делаем</p>
+                    <div class="stages__drag-circle">
+                        <p class="drag-text">DRAG</p>
+                    </div>
+                    <div class="stages__my-slider">
+                        <div class="stages-container">
+                            <div class="stages-container__wrapper">
+                                <img
+                                    src="./img/slider1.png"
+                                    alt="Исследование участка"
+                                    class="stages-image"
+                                />
+                                <div class="stages-info">
+                                    <p class="stages-num">(1)</p>
+                                    <p class="stages-title">
+                                        Исследование участка, его рельефа, почвы,
+                                        климатических условий
+                                    </p>
+                                    <p class="stages-text">
+                                        Это первоначальный шаг, позволяющий учесть
+                                        факторы при планировании, перед любым
+                                        ландшафтным проектом. Изучение участка
+                                        поможет понять его особенности, а также
+                                        определить зоны солнечной и тенистой
+                                        экспозиции, особенности почвы и топографии.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stages-container">
+                            <div class="stages-container__wrapper">
+                                <img
+                                    src="./img/slider2.png"
+                                    alt="План благоустройства"
+                                    class="stages-image"
+                                />
+                                <div class="stages-info">
+                                    <p class="stages-num">(2)</p>
+                                    <p class="stages-title">План благоустройства</p>
+                                    <p class="stages-text">
+                                        После исследования участка составляется
+                                        план, на котором отмечаются все элементы,
+                                        такие как дорожки, площадки, фонтаны,
+                                        растения и другие объекты. Это поможет
+                                        создать целостную и гармоничную композицию.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stages-container">
+                            <div class="stages-container__wrapper">
+                                <img
+                                    src="./img/slider3.png"
+                                    alt="Дизайн участка"
+                                    class="stages-image"
+                                />
+                                <div class="stages-info">
+                                    <p class="stages-num">(3)</p>
+                                    <p class="stages-title">
+                                        Дизайн участка, выбор стилевого решения
+                                    </p>
+                                    <p class="stages-text">
+                                        Важной частью благоустройства является выбор
+                                        стиля, которому будет следовать ваш участок.
+                                        Это может быть современный стиль, классика,
+                                        эклектика или что-то еще. Главное, чтобы
+                                        выбранный стиль соответствовал вашим
+                                        предпочтениям и гармонично вписывался в
+                                        окружающую среду.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stages-container">
+                            <div class="stages-container__wrapper">
+                                <img
+                                    src="./img/slider3.png"
+                                    alt="Дизайн участка"
+                                    class="stages-image"
+                                />
+                                <div class="stages-info">
+                                    <p class="stages-num">(4)</p>
+                                    <p class="stages-title">Подготовка участка</p>
+                                    <p class="stages-text">
+                                        Перед началом строительства и
+                                        благоустройства участка важно провести
+                                        подготовительные работы. Это может включать
+                                        очистку от мусора, выравнивание поверхности
+                                        и подготовку почвы, чтобы создать
+                                        оптимальные условия для роста растений и
+                                        установки элементов ландшафта.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stages-container">
+                            <div class="stages-container__wrapper">
+                                <img
+                                    src="./img/slider3.png"
+                                    alt="Дизайн участка"
+                                    class="stages-image"
+                                />
+                                <div class="stages-info">
+                                    <p class="stages-num">(5)</p>
+                                    <p class="stages-title">Инженерные работы</p>
+                                    <p class="stages-text">
+                                        Установка дренажных систем и прокладка
+                                        коммуникаций (например, системы полива,
+                                        электропроводки) являются неотъемлемой
+                                        частью благоустройства. Это позволит
+                                        обеспечить эффективное управление
+                                        влажностью, поддерживать правильное
+                                        освещение и вести комфортабельное
+                                        использование участка.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stages-container">
+                            <div class="stages-container__wrapper">
+                                <img
+                                    src="./img/slider3.png"
+                                    alt="Дизайн участка"
+                                    class="stages-image"
+                                />
+                                <div class="stages-info">
+                                    <p class="stages-num">(6)</p>
+                                    <p class="stages-title">
+                                        Установка элементов ландшафта
+                                    </p>
+                                    <p class="stages-text">
+                                        Этот этап включает установку дорожек,
+                                        площадок, фонтанов, садовых скульптур и
+                                        других элементов, которые помогут создать
+                                        желаемую атмосферу и функциональность на
+                                        участке. Они могут служить украшением,
+                                        направлять движение или предоставлять
+                                        функциональные возможности.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stages-container">
+                            <div class="stages-container__wrapper">
+                                <img
+                                    src="./img/slider3.png"
+                                    alt="Дизайн участка"
+                                    class="stages-image"
+                                />
+                                <div class="stages-info">
+                                    <p class="stages-num">(7)</p>
+                                    <p class="stages-title">Посадка растений</p>
+                                    <p class="stages-text">
+                                        После установки элементов ландшафта
+                                        наступает время для посадки растений. Важно
+                                        выбирать растения, которые будут хорошо
+                                        расти в соответствии с климатическими
+                                        условиями вашего участка и создавать
+                                        желаемый эстетический эффект. Растения могут
+                                        быть выбраны на основе их внешнего вида,
+                                        высоты, цвета и сезонного интереса.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stages-container">
+                            <div class="stages-container__wrapper">
+                                <img
+                                    src="./img/slider3.png"
+                                    alt="Дизайн участка"
+                                    class="stages-image"
+                                />
+                                <div class="stages-info">
+                                    <p class="stages-num">(8)</p>
+                                    <p class="stages-title">
+                                        Укладка газонов и травостоев
+                                    </p>
+                                    <p class="stages-text">
+                                        Если вы планируете иметь газоны и травостои
+                                        на вашем участке, этот этап предполагает
+                                        подготовку почвы и укладку газонных покрытий
+                                        или сеяние травы. Регулярный уход за
+                                        газонами сохранит их здоровье и красоту.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stages-container">
+                            <div class="stages-container__wrapper">
+                                <img
+                                    src="./img/slider3.png"
+                                    alt="Дизайн участка"
+                                    class="stages-image"
+                                />
+                                <div class="stages-info">
+                                    <p class="stages-num">(9)</p>
+                                    <p class="stages-title">
+                                        Освещение и автоматизация
+                                    </p>
+                                    <p class="stages-text">
+                                        Хорошее освещение поможет создать атмосферу
+                                        и обеспечить безопасность на участке,
+                                        особенно во время ночных мероприятий.
+                                        Автоматизация может включать системы полива,
+                                        освещения и другие функции, которые могут
+                                        быть удобными и энергоэффективными.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stages-container">
+                            <div class="stages-container__wrapper">
+                                <img
+                                    src="./img/slider3.png"
+                                    alt="Дизайн участка"
+                                    class="stages-image"
+                                />
+                                <div class="stages-info">
+                                    <p class="stages-num">(10)</p>
+                                    <p class="stages-title">
+                                        Завершение работ и декорирование участка
+                                    </p>
+                                    <p class="stages-text">
+                                        После завершения основных работ можно
+                                        приступить к завершающим штрихам и
+                                        декорированию участка. Это может включать
+                                        установку различных декоративных элементов,
+                                        создание уютных зон отдыха и озеленение
+                                        участка.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stages-container">
+                            <div class="stages-container__wrapper">
+                                <img
+                                    src="./img/slider3.png"
+                                    alt="Дизайн участка"
+                                    class="stages-image"
+                                />
+                                <div class="stages-info">
+                                    <p class="stages-num">(11)</p>
+                                    <p class="stages-title">
+                                        Сервисное обслуживание
+                                    </p>
+                                    <p class="stages-text">
+                                        Долгосрочное сервисное обслуживание вашего
+                                        участка включает регулярный уход за
+                                        растениями, травостоями, системами полива и
+                                        другими элементами. Регулярное обслуживание
+                                        поможет сохранить ваш участок в хорошем
+                                        состоянии и долговечности.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="request-call-btn btn-outline">Заказать проект</button>
-            </div>
-            <div class="advantages">
-                <p class="title-secondary">Преимущества</p>
-                <div class="advantages__wrapper">
-                    <img class="advantages__grass" src="./img/grass-circle.png" alt="Луг" />
-                    <div class="advantage advantage-1">
-                        <p class="advantage__num">(1)</p>
-                        <p class="advantage__text">Послегарантийное обслуживание</p>
+                <div class="reviews">
+                    <p class="title-secondary slider__title">Что о нас говорят</p>
+                    <div class="reviews__drag-circle">
+                        <p class="drag-text">DRAG</p>
                     </div>
-                    <div class="advantage advantage-2">
-                        <p class="advantage__num">(2)</p>
-                        <p class="advantage__text">Экономия времени и усилий</p>
-                    </div>
-                    <div class="advantage advantage-3">
-                        <p class="advantage__num">(3)</p>
-                        <p class="advantage__text">Качественные материалы и растения</p>
-                    </div>
-                    <div class="advantage advantage-4">
-                        <p class="advantage__num">(4)</p>
-                        <p class="advantage__text">Повышение привлекальности участка</p>
-                    </div>
-                    <div class="advantage advantage-5">
-                        <p class="advantage__num">(5)</p>
-                        <p class="advantage__text">Выстоит в непогоду</p>
-                    </div>
-                </div>
-            </div>
-            <div class="stages">
-                <p class="title-secondary slider__title">Как мы делаем</p>
-                <div class="stages__drag-circle">
-                    <p class="drag-text">DRAG</p>
-                </div>
-                <div class="stages__my-slider">
-                    <div class="stages-container">
-                        <div class="stages-container__wrapper">
-                            <img
-                                src="./img/slider1.png"
-                                alt="Исследование участка"
-                                class="stages-image"
-                            />
-                            <div class="stages-info">
-                                <p class="stages-num">(1)</p>
-                                <p class="stages-title">
-                                    Исследование участка, его рельефа, почвы,
-                                    климатических условий
+                    <div class="reviews__my-slider">
+                        <div class="reviews-container">
+                            <div class="reviews-container__wrapper">
+                                <p class="reviews-username">Маргарита Б.</p>
+                                <p class="reviews-link reviews-secondary">
+                                    ссылка на соц.сеть
                                 </p>
-                                <p class="stages-text">
-                                    Это первоначальный шаг, позволяющий учесть
-                                    факторы при планировании, перед любым
-                                    ландшафтным проектом. Изучение участка
-                                    поможет понять его особенности, а также
-                                    определить зоны солнечной и тенистой
-                                    экспозиции, особенности почвы и топографии.
+                                <img
+                                    src="./img/rating5.png"
+                                    alt="rating"
+                                    class="reviews-image"
+                                />
+                                <p class="reviews-text">
+                                    Заказывал муж. Очень довольна работой компании
+                                    “Куст”. Они проявили высокую профессиональность,
+                                    внимание к деталям и творческий подход. Наш
+                                    участок превратился в удивительный оазис, где мы
+                                    проводим время с удовольствием. Большое спасибо!
+                                    Отдельное спасибо Сергею за качественную
+                                    организацию!
+                                </p>
+                                <p class="reviews-date reviews-secondary">
+                                    01.01.2023
                                 </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="stages-container">
-                        <div class="stages-container__wrapper">
-                            <img
-                                src="./img/slider2.png"
-                                alt="План благоустройства"
-                                class="stages-image"
-                            />
-                            <div class="stages-info">
-                                <p class="stages-num">(2)</p>
-                                <p class="stages-title">План благоустройства</p>
-                                <p class="stages-text">
-                                    После исследования участка составляется
-                                    план, на котором отмечаются все элементы,
-                                    такие как дорожки, площадки, фонтаны,
-                                    растения и другие объекты. Это поможет
-                                    создать целостную и гармоничную композицию.
+                        <div class="reviews-container">
+                            <div class="reviews-container__wrapper">
+                                <p class="reviews-username">Денис М.</p>
+                                <p class="reviews-link reviews-secondary">
+                                    ссылка на соц.сеть
+                                </p>
+                                <img
+                                    src="./img/rating5.png"
+                                    alt="rating"
+                                    class="reviews-image"
+                                />
+                                <p class="reviews-text">
+                                    Я в полном восторге от Вашей компании. Они
+                                    отлично понимают потребности клиента и проявляют
+                                    креативность в создании уникальных дизайнерских
+                                    решений. Я получаю удовольствие от каждого
+                                    момента на нашем участке.
+                                </p>
+                                <p class="reviews-date reviews-secondary">
+                                    01.01.2023
                                 </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="stages-container">
-                        <div class="stages-container__wrapper">
-                            <img
-                                src="./img/slider3.png"
-                                alt="Дизайн участка"
-                                class="stages-image"
-                            />
-                            <div class="stages-info">
-                                <p class="stages-num">(3)</p>
-                                <p class="stages-title">
-                                    Дизайн участка, выбор стилевого решения
+                        <div class="reviews-container">
+                            <div class="reviews-container__wrapper">
+                                <p class="reviews-username">Арина Г.</p>
+                                <p class="reviews-link reviews-secondary">
+                                    ссылка на соц.сеть
                                 </p>
-                                <p class="stages-text">
-                                    Важной частью благоустройства является выбор
-                                    стиля, которому будет следовать ваш участок.
-                                    Это может быть современный стиль, классика,
-                                    эклектика или что-то еще. Главное, чтобы
-                                    выбранный стиль соответствовал вашим
-                                    предпочтениям и гармонично вписывался в
-                                    окружающую среду.
+                                <img
+                                    src="./img/rating5.png"
+                                    alt="rating"
+                                    class="reviews-image"
+                                />
+                                <p class="reviews-text">
+                                    Результаты работы выше всяких похвал, точно
+                                    воплощая мои представления об идеальном участке.
+                                    Рекомендую их услуги всем, кто хочет создать
+                                    прекрасное пространство вокруг своего дома.
+                                </p>
+                                <p class="reviews-date reviews-secondary">
+                                    01.01.2023
                                 </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="stages-container">
-                        <div class="stages-container__wrapper">
-                            <img
-                                src="./img/slider3.png"
-                                alt="Дизайн участка"
-                                class="stages-image"
-                            />
-                            <div class="stages-info">
-                                <p class="stages-num">(4)</p>
-                                <p class="stages-title">Подготовка участка</p>
-                                <p class="stages-text">
-                                    Перед началом строительства и
-                                    благоустройства участка важно провести
-                                    подготовительные работы. Это может включать
-                                    очистку от мусора, выравнивание поверхности
-                                    и подготовку почвы, чтобы создать
-                                    оптимальные условия для роста растений и
-                                    установки элементов ландшафта.
+                        <div class="reviews-container">
+                            <div class="reviews-container__wrapper">
+                                <p class="reviews-username">Арина Г.</p>
+                                <p class="reviews-link reviews-secondary">
+                                    ссылка на соц.сеть
+                                </p>
+                                <img
+                                    src="./img/rating5.png"
+                                    alt="rating"
+                                    class="reviews-image"
+                                />
+                                <p class="reviews-text">
+                                    Результаты работы выше всяких похвал, точно
+                                    воплощая мои представления об идеальном участке.
+                                    Рекомендую их услуги всем, кто хочет создать
+                                    прекрасное пространство вокруг своего дома.
+                                </p>
+                                <p class="reviews-date reviews-secondary">
+                                    01.01.2023
                                 </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="stages-container">
-                        <div class="stages-container__wrapper">
-                            <img
-                                src="./img/slider3.png"
-                                alt="Дизайн участка"
-                                class="stages-image"
-                            />
-                            <div class="stages-info">
-                                <p class="stages-num">(5)</p>
-                                <p class="stages-title">Инженерные работы</p>
-                                <p class="stages-text">
-                                    Установка дренажных систем и прокладка
-                                    коммуникаций (например, системы полива,
-                                    электропроводки) являются неотъемлемой
-                                    частью благоустройства. Это позволит
-                                    обеспечить эффективное управление
-                                    влажностью, поддерживать правильное
-                                    освещение и вести комфортабельное
-                                    использование участка.
+                        <div class="reviews-container">
+                            <div class="reviews-container__wrapper">
+                                <p class="reviews-username">Арина Г.</p>
+                                <p class="reviews-link reviews-secondary">
+                                    ссылка на соц.сеть
+                                </p>
+                                <img
+                                    src="./img/rating5.png"
+                                    alt="rating"
+                                    class="reviews-image"
+                                />
+                                <p class="reviews-text">
+                                    Результаты работы выше всяких похвал, точно
+                                    воплощая мои представления об идеальном участке.
+                                    Рекомендую их услуги всем, кто хочет создать
+                                    прекрасное пространство вокруг своего дома.
+                                </p>
+                                <p class="reviews-date reviews-secondary">
+                                    01.01.2023
                                 </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="stages-container">
-                        <div class="stages-container__wrapper">
-                            <img
-                                src="./img/slider3.png"
-                                alt="Дизайн участка"
-                                class="stages-image"
-                            />
-                            <div class="stages-info">
-                                <p class="stages-num">(6)</p>
-                                <p class="stages-title">
-                                    Установка элементов ландшафта
-                                </p>
-                                <p class="stages-text">
-                                    Этот этап включает установку дорожек,
-                                    площадок, фонтанов, садовых скульптур и
-                                    других элементов, которые помогут создать
-                                    желаемую атмосферу и функциональность на
-                                    участке. Они могут служить украшением,
-                                    направлять движение или предоставлять
-                                    функциональные возможности.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="stages-container">
-                        <div class="stages-container__wrapper">
-                            <img
-                                src="./img/slider3.png"
-                                alt="Дизайн участка"
-                                class="stages-image"
-                            />
-                            <div class="stages-info">
-                                <p class="stages-num">(7)</p>
-                                <p class="stages-title">Посадка растений</p>
-                                <p class="stages-text">
-                                    После установки элементов ландшафта
-                                    наступает время для посадки растений. Важно
-                                    выбирать растения, которые будут хорошо
-                                    расти в соответствии с климатическими
-                                    условиями вашего участка и создавать
-                                    желаемый эстетический эффект. Растения могут
-                                    быть выбраны на основе их внешнего вида,
-                                    высоты, цвета и сезонного интереса.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="stages-container">
-                        <div class="stages-container__wrapper">
-                            <img
-                                src="./img/slider3.png"
-                                alt="Дизайн участка"
-                                class="stages-image"
-                            />
-                            <div class="stages-info">
-                                <p class="stages-num">(8)</p>
-                                <p class="stages-title">
-                                    Укладка газонов и травостоев
-                                </p>
-                                <p class="stages-text">
-                                    Если вы планируете иметь газоны и травостои
-                                    на вашем участке, этот этап предполагает
-                                    подготовку почвы и укладку газонных покрытий
-                                    или сеяние травы. Регулярный уход за
-                                    газонами сохранит их здоровье и красоту.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="stages-container">
-                        <div class="stages-container__wrapper">
-                            <img
-                                src="./img/slider3.png"
-                                alt="Дизайн участка"
-                                class="stages-image"
-                            />
-                            <div class="stages-info">
-                                <p class="stages-num">(9)</p>
-                                <p class="stages-title">
-                                    Освещение и автоматизация
-                                </p>
-                                <p class="stages-text">
-                                    Хорошее освещение поможет создать атмосферу
-                                    и обеспечить безопасность на участке,
-                                    особенно во время ночных мероприятий.
-                                    Автоматизация может включать системы полива,
-                                    освещения и другие функции, которые могут
-                                    быть удобными и энергоэффективными.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="stages-container">
-                        <div class="stages-container__wrapper">
-                            <img
-                                src="./img/slider3.png"
-                                alt="Дизайн участка"
-                                class="stages-image"
-                            />
-                            <div class="stages-info">
-                                <p class="stages-num">(10)</p>
-                                <p class="stages-title">
-                                    Завершение работ и декорирование участка
-                                </p>
-                                <p class="stages-text">
-                                    После завершения основных работ можно
-                                    приступить к завершающим штрихам и
-                                    декорированию участка. Это может включать
-                                    установку различных декоративных элементов,
-                                    создание уютных зон отдыха и озеленение
-                                    участка.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="stages-container">
-                        <div class="stages-container__wrapper">
-                            <img
-                                src="./img/slider3.png"
-                                alt="Дизайн участка"
-                                class="stages-image"
-                            />
-                            <div class="stages-info">
-                                <p class="stages-num">(11)</p>
-                                <p class="stages-title">
-                                    Сервисное обслуживание
-                                </p>
-                                <p class="stages-text">
-                                    Долгосрочное сервисное обслуживание вашего
-                                    участка включает регулярный уход за
-                                    растениями, травостоями, системами полива и
-                                    другими элементами. Регулярное обслуживание
-                                    поможет сохранить ваш участок в хорошем
-                                    состоянии и долговечности.
-                                </p>
-                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="reviews">
-                <p class="title-secondary slider__title">Что о нас говорят</p>
-                <div class="reviews__drag-circle">
-                    <p class="drag-text">DRAG</p>
-                </div>
-                <div class="reviews__my-slider">
-                    <div class="reviews-container">
-                        <div class="reviews-container__wrapper">
-                            <p class="reviews-username">Маргарита Б.</p>
-                            <p class="reviews-link reviews-secondary">
-                                ссылка на соц.сеть
-                            </p>
-                            <img
-                                src="./img/rating5.png"
-                                alt="rating"
-                                class="reviews-image"
-                            />
-                            <p class="reviews-text">
-                                Заказывал муж. Очень довольна работой компании
-                                “Куст”. Они проявили высокую профессиональность,
-                                внимание к деталям и творческий подход. Наш
-                                участок превратился в удивительный оазис, где мы
-                                проводим время с удовольствием. Большое спасибо!
-                                Отдельное спасибо Сергею за качественную
-                                организацию!
-                            </p>
-                            <p class="reviews-date reviews-secondary">
-                                01.01.2023
-                            </p>
-                        </div>
-                    </div>
-                    <div class="reviews-container">
-                        <div class="reviews-container__wrapper">
-                            <p class="reviews-username">Денис М.</p>
-                            <p class="reviews-link reviews-secondary">
-                                ссылка на соц.сеть
-                            </p>
-                            <img
-                                src="./img/rating5.png"
-                                alt="rating"
-                                class="reviews-image"
-                            />
-                            <p class="reviews-text">
-                                Я в полном восторге от Вашей компании. Они
-                                отлично понимают потребности клиента и проявляют
-                                креативность в создании уникальных дизайнерских
-                                решений. Я получаю удовольствие от каждого
-                                момента на нашем участке.
-                            </p>
-                            <p class="reviews-date reviews-secondary">
-                                01.01.2023
-                            </p>
-                        </div>
-                    </div>
-                    <div class="reviews-container">
-                        <div class="reviews-container__wrapper">
-                            <p class="reviews-username">Арина Г.</p>
-                            <p class="reviews-link reviews-secondary">
-                                ссылка на соц.сеть
-                            </p>
-                            <img
-                                src="./img/rating5.png"
-                                alt="rating"
-                                class="reviews-image"
-                            />
-                            <p class="reviews-text">
-                                Результаты работы выше всяких похвал, точно
-                                воплощая мои представления об идеальном участке.
-                                Рекомендую их услуги всем, кто хочет создать
-                                прекрасное пространство вокруг своего дома.
-                            </p>
-                            <p class="reviews-date reviews-secondary">
-                                01.01.2023
-                            </p>
-                        </div>
-                    </div>
-                    <div class="reviews-container">
-                        <div class="reviews-container__wrapper">
-                            <p class="reviews-username">Арина Г.</p>
-                            <p class="reviews-link reviews-secondary">
-                                ссылка на соц.сеть
-                            </p>
-                            <img
-                                src="./img/rating5.png"
-                                alt="rating"
-                                class="reviews-image"
-                            />
-                            <p class="reviews-text">
-                                Результаты работы выше всяких похвал, точно
-                                воплощая мои представления об идеальном участке.
-                                Рекомендую их услуги всем, кто хочет создать
-                                прекрасное пространство вокруг своего дома.
-                            </p>
-                            <p class="reviews-date reviews-secondary">
-                                01.01.2023
-                            </p>
-                        </div>
-                    </div>
-                    <div class="reviews-container">
-                        <div class="reviews-container__wrapper">
-                            <p class="reviews-username">Арина Г.</p>
-                            <p class="reviews-link reviews-secondary">
-                                ссылка на соц.сеть
-                            </p>
-                            <img
-                                src="./img/rating5.png"
-                                alt="rating"
-                                class="reviews-image"
-                            />
-                            <p class="reviews-text">
-                                Результаты работы выше всяких похвал, точно
-                                воплощая мои представления об идеальном участке.
-                                Рекомендую их услуги всем, кто хочет создать
-                                прекрасное пространство вокруг своего дома.
-                            </p>
-                            <p class="reviews-date reviews-secondary">
-                                01.01.2023
-                            </p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer></footer>
+            </main>
+            <footer></footer>
+        </div>
     </body>
 </html>

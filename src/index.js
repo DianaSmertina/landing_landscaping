@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./styles.scss";
 import { tns } from "../node_modules/tiny-slider/src/tiny-slider";
 
 var slider = tns({

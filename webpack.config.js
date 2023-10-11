@@ -8,7 +8,6 @@ const config = {
 
   output: {
     path: path.resolve(__dirname, 'dist'),
-    clean: true,
     filename: '[name].js',
     assetModuleFilename: 'img/[name][ext]'
   },
@@ -37,10 +36,10 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader,'css-loader'],
+        test: /\.html$/i,
+        loader: 'html-loader'
       },
-            
+
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif|mp3)$/i,
         type: 'asset/resource',
@@ -50,9 +49,9 @@ const config = {
       },
 
       {
-        test: /\.html$/i,
-        loader: 'html-loader'
-      }
+        test: /\.s[ac]ss$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+      },
     ],
   },
 };

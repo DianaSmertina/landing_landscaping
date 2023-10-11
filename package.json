@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "build": "webpack --mode development",
+        "build": "webpack --mode production",
         "dev": "webpack-dev-server --mode development"
     },
     "author": "",
@@ -20,6 +20,8 @@
         "webpack-dev-server": "^4.11.1"
     },
     "dependencies": {
+        "sass": "^1.69.0",
+        "sass-loader": "^13.3.2",
         "tiny-slider": "^2.9.4"
     }
 }

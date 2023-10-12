@@ -1,5 +1,7 @@
-@import "./constants.scss";
-@import "./buttons.scss";
+@import "./styles/constants.scss";
+@import "./styles/buttons.scss";
+@import "./styles/base.scss";
+@import "./styles/components/services.scss";
 
 * {
     box-sizing: border-box;
@@ -32,7 +34,6 @@ li {
     font-style: normal;
     font-weight: 500;
     line-height: 110%;
-    text-transform: capitalize;
 }
 
 ul {
@@ -141,7 +142,7 @@ header {
     align-self: start;
     color: $dark-color;
     font-family: "Inter", sans-serif;
-    font-size: 1.125rem;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 110%;
@@ -280,12 +281,6 @@ header {
 
 .stages-text {
     margin-right: 31px;
-    color: #282a36;
-    font-family: "Inter";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%;
 }
 
 .stages,
@@ -362,15 +357,6 @@ header {
     line-height: 130%;
 }
 
-.reviews-text {
-    color: $dark-color;
-    font-family: "Inter";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%;
-}
-
 .reviews-link {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -433,13 +419,6 @@ header {
 }
 
 .example-block__text {
-    color: $dark-color;
-    font-family: "Tektur";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%;
-    text-transform: uppercase;
     margin-top: 15px;
 }
 
@@ -458,17 +437,6 @@ header {
     font-family: "Tektur";
     font-size: 20px;
     font-style: normal;
-
-    line-height: 100%;
-    text-transform: uppercase;
-}
-
-.advantage__text {
-    color: $dark-color;
-    font-family: "Tektur";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
     line-height: 100%;
     text-transform: uppercase;
 }

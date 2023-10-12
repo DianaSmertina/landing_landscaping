@@ -1,0 +1,51 @@
+.service {
+    width: 100%;
+    padding: 20px 0;
+    transition: 0.3s;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-partial .service__description {
+    display: none;
+}
+
+.service-full {
+    height: 297px;
+    position: relative;
+}
+
+.service-full .service__description {
+    display: flex;
+    position: absolute;
+    left: 25%;
+}
+
+.service-full .service__arrow {
+    transform: rotate(-90deg);
+}
+
+.service__arrow {
+    transition: 0.3s;
+}
+
+.services__list {
+    list-style-type: none;
+}
+
+.services__list > * {
+    border-top: 1px solid $dark-color;
+}
+
+.services__list:last-child {
+    border-bottom: 1px solid $dark-color;
+}
+
+.service__description {
+    gap: 20px;
+}
+
+.service__text {
+    max-width: 370px;
+    width: 100%;
+}

@@ -1,0 +1,101 @@
+@import "../constants.scss";
+
+.stages {
+    margin-bottom: 40px;
+}
+
+.stages .slider__title,
+.reviews .slider__title {
+    margin-bottom: 22px;
+}
+
+.stages-container {
+    height: 345px;
+    cursor: ew-resize;
+}
+
+.stages-container__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 31px;
+    background-color: white;
+}
+
+.stages-image {
+    display: block;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.stages-info {
+    margin-top: 30px;
+}
+
+.stages-num {
+    color: $brand-color;
+    font-family: "Tektur", cursive;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.stages-title {
+    margin-bottom: 20px;
+    margin-right: 59px;
+    color: $dark-color;
+    font-family: "Tektur", cursive;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    text-transform: uppercase;
+}
+
+.stages-text {
+    margin-right: 31px;
+}
+
+.stages,
+.reviews {
+    position: relative;
+}
+
+.stages__drag-circle,
+.reviews__drag-circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: $brand-color;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stages__drag-circle {
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.drag-text {
+    color: $light-color;
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.stages:active .stages__drag-circle,
+.reviews:active .reviews__drag-circle {
+    visibility: hidden;
+}

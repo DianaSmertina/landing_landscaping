@@ -1,0 +1,61 @@
+@import "../constants.scss";
+
+.advantage__num {
+    color: $brand-color;
+    font-family: "Tektur";
+    font-size: 20px;
+    font-style: normal;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.advantage {
+    width: 369px;
+    height: 124px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    gap: 5px;
+    position: absolute;
+}
+
+.advantages__wrapper {
+    position: relative;
+    height: 690px;
+    margin-top: 70px;
+}
+
+.advantages__grass {
+    position: absolute;
+    display: block;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.advantage-1 {
+    left: 11.7%;
+    top: 12.2%;
+}
+
+.advantage-2 {
+    left: 61.88%;
+}
+
+.advantage-3 {
+    left: 12.6%;
+    top: 64%;
+}
+
+.advantage-4 {
+    left: 68.77%;
+    top: 47.5%;
+}
+
+.advantage-5 {
+    left: 52%;
+    bottom: 0;
+}

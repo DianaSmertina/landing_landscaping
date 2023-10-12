@@ -1,0 +1,72 @@
+@import "../constants.scss";
+
+.statistics {
+    display: flex;
+}
+
+.stat-data {
+    max-width: 385px;
+    width: 25%;
+    height: 651px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.statistics__first {
+    background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.2) 0%,
+            rgba(0, 0, 0, 0.2) 100%
+        ),
+        url("./img/120variants.png"), lightgray 50% / cover no-repeat;
+}
+
+.statistics__second {
+    background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.2) 0%,
+            rgba(0, 0, 0, 0.2) 100%
+        ),
+        url("./img/85styles.png"), lightgray 50% / cover no-repeat;
+}
+
+.statistics__third {
+    background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.2) 0%,
+            rgba(0, 0, 0, 0.2) 100%
+        ),
+        url("./img/50solution.png"), lightgray 50% / cover no-repeat;
+}
+
+.statistics__forth {
+    background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.2) 0%,
+            rgba(0, 0, 0, 0.2) 100%
+        ),
+        url("./img/12years.png"), lightgray 50% / cover no-repeat;
+}
+
+.stat-data__caption {
+    margin-left: 25px;
+}
+
+.stat-number {
+    color: $light-color;
+    font-family: "Tektur";
+    font-size: 120px;
+    font-weight: 600;
+    line-height: 84px;
+}
+
+.stat-description {
+    color: $light-color;
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 52px;
+}

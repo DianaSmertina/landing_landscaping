@@ -1,7 +1,8 @@
 .service {
     width: 100%;
-    padding: 20px 0;
+    height: 54px;
     transition: 0.3s;
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -48,4 +49,8 @@
 .service__text {
     max-width: 370px;
     width: 100%;
+}
+
+.service__title {
+    line-height: 14px;
 }

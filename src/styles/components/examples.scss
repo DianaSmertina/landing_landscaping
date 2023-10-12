@@ -1,0 +1,42 @@
+.examples__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.examples-btn {
+    margin-top: 50px;
+}
+
+.big-example {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    gap: 81px;
+}
+
+.big-example__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.big-example__bottom {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+}
+
+.example-block__text {
+    margin-top: 15px;
+}
+
+.example-block__img {
+    max-width: 100%;
+}
+
+.example-big-img {
+    height: 610px;
+    width: 370px;
+    max-width: 370px;
+}

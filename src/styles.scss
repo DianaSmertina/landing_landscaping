@@ -34,7 +34,7 @@ button {
     border-style: none;
 }
 
-li {
+.header__nav-list li {
     font-family: "Inter", sans-serif;
     font-size: 1rem;
     font-style: normal;
@@ -42,7 +42,7 @@ li {
     line-height: 110%;
 }
 
-ul {
+.header__nav-list {
     display: inline-flex;
     align-items: flex-start;
     list-style-type: none;
@@ -53,7 +53,7 @@ ul {
     padding-inline-start: 0px;
 }
 
-li a {
+.header__nav-list li a {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -63,7 +63,7 @@ li a {
     padding: 1.1875rem 0.94rem;
 }
 
-li:nth-last-child(1) a {
+.header__nav-list li:nth-last-child(1) a {
     padding: 1.1875rem 0 1.1875rem 0.94rem;
 }
 

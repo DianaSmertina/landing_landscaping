@@ -5,6 +5,7 @@
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .service-partial .service__description {
@@ -32,14 +33,12 @@
 
 .services__list {
     list-style-type: none;
+    padding: 0;
+    border-bottom: 1px solid $dark-color;
 }
 
 .services__list > * {
     border-top: 1px solid $dark-color;
-}
-
-.services__list:last-child {
-    border-bottom: 1px solid $dark-color;
 }
 
 .service__description {
@@ -53,4 +52,8 @@
 
 .service__title {
     line-height: 14px;
+}
+
+.services__btn {
+    margin-top: 43px;
 }

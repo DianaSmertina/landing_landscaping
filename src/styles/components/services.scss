@@ -6,21 +6,19 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    position: relative;
 }
 
 .service-partial .service__description {
-    display: none;
+    opacity: 0;
 }
 
 .service-full {
     height: 297px;
-    position: relative;
 }
 
 .service-full .service__description {
-    display: flex;
-    position: absolute;
-    left: 25%;
+    opacity: 1;
 }
 
 .service-full .service__arrow {
@@ -42,6 +40,10 @@
 }
 
 .service__description {
+    display: flex;
+    position: absolute;
+    left: 25%;
+    transition: 0.2s;
     gap: 20px;
 }
 

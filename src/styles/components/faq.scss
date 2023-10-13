@@ -1,0 +1,62 @@
+@import "../constants.scss";
+
+.faq__list {
+    list-style-type: none;
+    padding: 0;
+    border-bottom: 1px solid $dark-color;
+}
+
+.faq__list > * {
+    border-top: 1px solid $dark-color;
+}
+
+.question {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 20px;
+    justify-content: space-between;
+    position: relative;
+    transition: 0.3s;
+    height: 60px;
+}
+
+.question:first-child {
+    height: 80px;
+}
+
+.question:nth-child(2) {
+    height: 100px;
+}
+
+.faq__list .question-full {
+    height: 157px;
+}
+
+.question__title {
+    max-width: 585px;
+    width: 100%;
+}
+
+.question__text {
+    max-width: 370px;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transition: 0.2s;
+}
+
+.question-partial .question__text {
+    opacity: 0;
+}
+
+.question-full .question__text {
+    opacity: 1;
+}
+
+.question__arrow {
+    transition: 0.3s;
+}
+
+.question-full .question__arrow {
+    transform: rotate(-90deg);
+}

@@ -48,3 +48,23 @@ questionElementsArray.forEach((el) => {
         changeVisibility(ulElem, "question");
     })
 })
+
+function hideDragCircle(container, circle) {
+    container.addEventListener("mousedown", () => {
+        if (circle) {
+            circle.remove();
+        }
+    })
+    // container.addEventListener("touchstart", () => {
+    //     if (circle) {
+    //         circle.remove();
+    //     }
+    // })
+}
+
+const stagesSlider = document.querySelector(".stages__my-slider");
+const reviewsSlider = document.querySelector(".reviews__my-slider");
+const circleStages = document.querySelector(".stages__drag-circle");
+const circleReviews = document.querySelector(".reviews__drag-circle");
+hideDragCircle(stagesSlider, circleStages);
+hideDragCircle(reviewsSlider, circleReviews);

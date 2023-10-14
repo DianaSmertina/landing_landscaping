@@ -18,6 +18,7 @@
     position: relative;
     transition: 0.3s;
     height: 60px;
+    cursor: pointer;
 }
 
 .question:first-child {
@@ -47,6 +48,8 @@
 
 .question-partial .question__text {
     opacity: 0;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .question-full .question__text {

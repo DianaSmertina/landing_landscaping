@@ -7,10 +7,13 @@
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
+    cursor: pointer;
 }
 
 .service-partial .service__description {
     opacity: 0;
+    visibility: hidden;
+    z-index: 0;
 }
 
 .service-full {

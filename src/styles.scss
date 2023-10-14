@@ -9,6 +9,7 @@
 @import "./styles/components/examples.scss";
 @import "./styles/components/advantages.scss";
 @import "./styles/components/faq.scss";
+@import "./styles/components/form.scss";
 
 * {
     box-sizing: border-box;
@@ -19,8 +20,8 @@ html {
 }
 
 body {
-    margin: 0.5rem 1.88rem 0rem 1.88rem;
     background-color: $background-color;
+    margin: 0;
 }
 
 p {
@@ -35,9 +36,15 @@ button {
     border-style: none;
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
 .header__nav-list li {
     font-family: "Inter", sans-serif;
-    font-size: 1rem;
+    font-size: 20px;;
     font-style: normal;
     font-weight: 500;
     line-height: 110%;
@@ -45,13 +52,10 @@ button {
 
 .header__nav-list {
     display: inline-flex;
-    align-items: flex-start;
+    align-items: center;
     list-style-type: none;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 .header__nav-list li a {
@@ -59,7 +63,6 @@ button {
     text-align: center;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
     color: $dark-color;
     padding: 1.1875rem 0.94rem;
 }
@@ -71,15 +74,17 @@ button {
 .content-wrapper {
     max-width: 1600px;
     margin: 0 auto;
+    padding: 0 30px;
 }
 
 header {
+    padding-top: 10px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 36px;
 }
 
 .logo {
-    width: 3.375rem;
-    height: 3.375rem;
+    width: 78px;
+    height: 78px;
 }

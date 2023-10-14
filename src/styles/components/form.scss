@@ -1,0 +1,175 @@
+@import "../constants.scss";
+
+.connection {
+    background-color: $brand-color;
+    height: 900px;
+    width: 100%;
+    border-radius: 40px;
+    padding-top: 70px;
+}
+
+.connection .connection__title {
+    color: $light-color;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.connection__list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.data .data__title {
+    color: $light-color;
+}
+
+.data__info .connection-link {
+    color: $light-color;
+    text-transform: none;
+    font-size: 25px;
+}
+
+.data__title {
+    width: 50%;
+}
+
+.data__info {
+    width: 50%;
+}
+
+.data {
+    display: flex;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    padding-top: 20px;
+    align-items: start;
+}
+
+.data:first-child {
+    padding-bottom: 20px;
+}
+
+.contacts {
+    margin-top: -20px;
+}
+
+.contact .contact__name {
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: none;
+    font-size: 25px;
+}
+
+.contact .contact__data {
+    color: $light-color;
+    text-transform: none;
+    font-size: 25px;
+}
+
+.contact {
+    height: 91px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.contact:first-child {
+    border-bottom: 1px solid $light-color;
+}
+
+.form__input {
+    background: transparent;
+    height: 23px;
+    border: none;
+    border-bottom: 1px solid $light-color;
+    color: $light-color;
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    width: 50%;
+    padding-bottom: 10px;
+}
+
+.form__input:focus {
+    outline: none;
+}
+
+.form__input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.form__textarea {
+    background: transparent;
+    height: 182px;
+    border: 1px solid $light-color;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    color: $light-color;
+    font-size: 16px;
+    font-family: "Inter";
+    font-weight: 400;
+    padding: 5px;
+}
+
+.form__block {
+    display: flex;
+    gap: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.form__textarea-title {
+    color: $light-color;
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.form__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.form__checkbox + label {
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.form__checkbox + label::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("./img/checkbox-default.svg");
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-right: 15px;
+}
+
+.form__checkbox:checked + label::before {
+    background-image: url("./img/checkbox-checked.svg");
+}
+
+.form__agreement-link {
+    color: $light-color;
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: underline;
+    line-height: 21px;
+}

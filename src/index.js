@@ -55,11 +55,6 @@ function hideDragCircle(container, circle) {
             circle.remove();
         }
     })
-    // container.addEventListener("touchstart", () => {
-    //     if (circle) {
-    //         circle.remove();
-    //     }
-    // })
 }
 
 const stagesSlider = document.querySelector(".stages__my-slider");

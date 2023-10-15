@@ -22,3 +22,26 @@
     border: 1px solid $brand-color;
     color: $brand-color;
 }
+
+.submit-btn {
+    height: 59px;
+    border-radius: 10px;
+    background: $light-color;
+    color: $brand-color;
+    font-family: "Tektur";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    transition: 0.1s linear;
+    cursor: pointer;
+    border: none;
+    margin-top: -10px;
+}
+
+.submit-btn:hover {
+    color: $light-color;
+    background: $brand-color;
+    border: 1px solid $light-color;
+}

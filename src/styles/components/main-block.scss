@@ -4,28 +4,35 @@
     font-family: "Tektur", Arial, Sans-Serif;
     color: $dark-color;
     text-align: center;
-    font-size: 10.625rem;
+    font-size: 10.625vw;
     font-style: normal;
     font-weight: 500;
-    line-height: 72%;
+    line-height: 7.437vw;
     letter-spacing: -0.2125rem;
     text-transform: uppercase;
     margin-left: -0.625rem;
     padding-right: 0.625rem;
 }
 
-.main-title.orange {
+.orange {
     color: $brand-color;
-}
-
-.main-title.third-row-text {
-    margin-left: 0.625rem;
 }
 
 .title-block__row {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+}
+
+.title-block__row:first-child {
+    gap: 4.8125vw;
+}
+
+.title-block__row:last-child {
+    gap: 2.625vw;
+}
+
+.third-row-text {
+    margin-left: 0;
 }
 
 .title-block-wrapper {
@@ -36,16 +43,16 @@
 
 .container-img {
     display: flex;
-    gap: 0.62rem;
 }
 
 .image-mainscreen {
-    width: 11.375rem;
-    height: 7.5rem;
+    width: 11.375vw;
+    height: 7.5vw;
 }
 
 .first-img {
     background: url("./img/main-title1.png"), lightgray 50% / cover no-repeat;
+    margin-right: 10px;
 }
 
 .second-img {
@@ -54,6 +61,7 @@
 
 .third-img {
     background: url("./img/main-title3.png"), lightgray 50% / cover no-repeat;
+    margin-right: 16px;
 }
 
 .forth-img {
@@ -61,14 +69,15 @@
 }
 
 .main-text-title {
-    width: 24.0625rem;
+    width: 23.125vw;
     align-self: start;
     color: $dark-color;
     font-family: "Inter", sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
     line-height: 110%;
+    margin-right: 20px;
 }
 
 .title-block-btn {

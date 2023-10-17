@@ -36,3 +36,9 @@
     font-style: normal;
     font-weight: 300;
 }
+
+@media (max-width: 640px) {
+    .general-text {
+        font-size: 12px;
+    }
+}

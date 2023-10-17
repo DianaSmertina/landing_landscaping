@@ -17,16 +17,16 @@
     justify-content: space-between;
     position: relative;
     transition: 0.3s;
-    height: 60px;
     cursor: pointer;
 }
 
-.question:first-child {
-    height: 80px;
+.question-partial {
+    height: 77px;
 }
 
-.question:nth-child(2) {
-    height: 100px;
+.question__container {
+    width: 100%;
+    position: relative;
 }
 
 .faq__list .question-full {
@@ -34,15 +34,22 @@
 }
 
 .question__title {
-    max-width: 585px;
+    width: 49%;
+}
+
+.question__visible-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
     width: 100%;
 }
 
 .question__text {
     max-width: 370px;
-    width: 100%;
+    width: 45%;
     position: absolute;
     left: 50%;
+    top: 0;
     transition: 0.2s;
 }
 
@@ -62,4 +69,84 @@
 
 .question-full .question__arrow {
     transform: rotate(-90deg);
+}
+
+@media (max-width: 1417px) {
+    .question-partial:last-child {
+        height: 100px;
+    }
+}
+
+@media (max-width: 1316px) {
+    .question-partial:nth-child(7) {
+        height: 100px;
+    }
+}
+
+@media (max-width: 1154px) {
+    .question-partial:nth-child(6), .question-partial:nth-child(4) {
+        height: 100px;
+    }
+}
+
+@media (max-width: 1101px) {
+    .question-partial:nth-child(2) {
+        height: 100px;
+    }
+}
+
+@media (max-width: 980px) {
+    .question .question__title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 890px) {
+    .question__title {
+        width: 95%;
+    }
+
+    .faq__list .question {
+        padding-top: 15px;
+        flex-direction: column;
+    }
+
+    .question__text {
+        display: none;
+    }
+
+    .question-full .question__text {
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        position: static;
+        margin-top: 15px;
+    }
+
+    .faq__list .question-partial {
+        height: 85px;
+    }
+
+    .faq__list .question-full {
+        height: 140px;
+    }
+
+    .faq__list .question-full:nth-child(7) {
+        height: 160px;
+    }
+
+    .faq__list .question-full:nth-child(8)  {
+        height: 160px;
+    }
+}
+
+@media (max-width: 486px) {
+    .faq__list .question-partial:nth-child(8),
+    .faq__list .question-partial:nth-child(7) {
+        height: 100px;
+    }
+
+    .faq__list .question-full:nth-child(8)  {
+        height: 180px;
+    }
 }

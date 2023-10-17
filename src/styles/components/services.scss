@@ -2,7 +2,7 @@
     width: 100%;
     height: 54px;
     transition: 0.3s;
-    padding-top: 20px;
+    padding-top: 16px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -48,6 +48,7 @@
     left: 25%;
     transition: 0.2s;
     gap: 20px;
+    width: 70%;
 }
 
 .service__text {
@@ -55,10 +56,20 @@
     width: 100%;
 }
 
+.service-full .service__title {
+    width: 24%;
+}
+
 .service__title {
-    line-height: 14px;
+    line-height: 23px;
 }
 
 .services__btn {
     margin-top: 43px;
+}
+
+.service__cover {
+    object-fit: cover;
+    width: 370px;
+    height: 250px;
 }

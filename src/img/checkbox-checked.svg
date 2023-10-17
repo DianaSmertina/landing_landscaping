@@ -1,3 +1,5 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.68193 18.696L8.4 19.4368L9.11807 18.696L21.7181 5.69597L20.2819 4.30403L8.4 16.5632L3.71807 11.7326L2.28193 13.1245L7.68193 18.696ZM1 1H23V23H1V1Z" stroke="white" stroke-width="2"/>
+<g id="CheckBox">
+<path id="Vector" d="M3 12.4286L8.4 18L21 5" stroke="white" stroke-width="2"/>
+</g>
 </svg>

@@ -155,7 +155,7 @@
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-image: url("./img/checkbox-default.svg");
+    border: 2px solid $light-color;
     background-repeat: no-repeat;
     flex-shrink: 0;
     flex-grow: 0;

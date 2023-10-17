@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <title>Куст: инженерное благоустройство</title>
+        <title>Куст</title>
         <meta charset="UTF-8" />
-        <!-- <meta name="description" content="Кредитный калькулятор ТКПБ" />
-        <meta name="keywords" content="кредит, калькулятор" />
-        <meta name="author" content="MDV" /> -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
             name="viewport"
             content="width=device-width, maximum-scale=3, minimum-scale=0.9"
         />
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="preload"
+            as="style"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Tektur:wght@400;500;600;700&display=swap"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Tektur:wght@400;500;600;700&display=swap"
+        />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Tektur:wght@400;500;600&display=swap"
-            rel="stylesheet"
-        />
+        <link rel="icon" href="favicon.ico" />
     </head>
     <body>
         <div class="content-wrapper">
             <header>
                 <img class="logo" src="./img/logo.svg" alt="За стеклом" />
                 <ul class="header__nav-list">
-                    <li><a href="#">Преимущества</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Примеры работ</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li class="header__nav-link">
+                        <a href="#advantages">Преимущества</a>
+                    </li>
+                    <li class="header__nav-link">
+                        <a href="#reviews">Отзывы</a>
+                    </li>
+                    <li class="header__nav-link">
+                        <a href="#services">Услуги</a>
+                    </li>
+                    <li class="header__nav-link">
+                        <a href="#examples">Примеры работ</a>
+                    </li>
+                    <li class="header__nav-link">
+                        <a href="#contacts">Контакты</a>
+                    </li>
                 </ul>
             </header>
         </div>
@@ -91,7 +103,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="services">
+                <div class="services" id="services">
                     <p class="title-secondary">Что мы делаем</p>
                     <ul class="services__list">
                         <li class="service service-partial">
@@ -328,7 +340,7 @@
                     </ul>
                     <button class="btn services__btn">Заказать услугу</button>
                 </div>
-                <div class="examples">
+                <div class="examples" id="examples">
                     <p class="title-secondary">Примеры работ</p>
                     <div class="examples__wrapper">
                         <div class="small-example">
@@ -402,7 +414,7 @@
                     </div>
                     <button class="examples-btn btn">Заказать проект</button>
                 </div>
-                <div class="advantages">
+                <div class="advantages" id="advantages">
                     <p class="title-secondary">Преимущества</p>
                     <div class="advantages__wrapper">
                         <img
@@ -829,7 +841,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="reviews">
+                <div class="reviews" id="reviews">
                     <p class="title-secondary slider__title">
                         Что о нас говорят
                     </p>
@@ -958,7 +970,7 @@
                     <button class="btn reviews__btn">Написать отзыв</button>
                 </div>
             </div>
-            <div class="connection">
+            <div class="connection" id="contacts">
                 <div class="content-wrapper">
                     <p class="title-secondary connection__title">
                         Как связаться с нами
@@ -1061,7 +1073,11 @@
                                         >
                                     </div>
                                 </div>
-                                <input type="submit" value="Отправить" class="submit-btn"/>
+                                <input
+                                    type="submit"
+                                    value="Отправить"
+                                    class="submit-btn"
+                                />
                             </form>
                         </li>
                     </ul>
@@ -1116,7 +1132,9 @@
                                 >
                             </p>
                             <p class="footer-text footer-write-us__text">
-                                <a href="https://wa.me/79657750808" target="_blank"
+                                <a
+                                    href="https://wa.me/79657750808"
+                                    target="_blank"
                                     >Whats App: +7 965 775 08-08</a
                                 >
                             </p>

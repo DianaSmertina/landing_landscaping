@@ -12,12 +12,15 @@
 @import "./styles/components/form.scss";
 @import "./styles/components/footer.scss";
 
+
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 html {
     font-size: 16px;
+    font-family: Tektur, "Verdana", Sans-Serif;
 }
 
 body {
@@ -43,12 +46,16 @@ a {
     color: inherit;
 }
 
-.header__nav-list li {
+.header__nav-link {
     font-family: "Inter", sans-serif;
-    font-size: 20px;;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 110%;
+}
+
+.header__nav-link:hover {
+    text-decoration: underline;
 }
 
 .header__nav-list {

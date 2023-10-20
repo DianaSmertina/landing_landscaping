@@ -9,25 +9,28 @@ var slider = tns({
     controls: false,
     mouseDrag: true,
     gutter: 20,
-    arrowKeys: true,
     edgePadding: 10,
     responsive: {
-        1201: {
+        1101: {
             items: 2,
-        }
-    }
+        },
+    },
 });
 
 var slider = tns({
     container: ".reviews__my-slider",
-    items: 4,
+    items: 2,
     slideBy: "page",
     loop: false,
     controls: false,
     mouseDrag: true,
     gutter: 20,
-    arrowKeys: true,
     edgePadding: 20,
+    responsive: {
+        1101: {
+            items: 4,
+        },
+    },
 });
 
 var slider = tns({
@@ -38,7 +41,6 @@ var slider = tns({
     controls: false,
     mouseDrag: true,
     gutter: 10,
-    arrowKeys: true,
     edgePadding: 20,
     responsive: {
         850: {
@@ -90,25 +92,25 @@ const circleReviews = document.querySelector(".reviews__drag-circle");
 hideDragCircle(stagesSlider, circleStages);
 hideDragCircle(reviewsSlider, circleReviews);
 
-function changeStagesHeight() {
+const reviewsColumns = Array.from(
+    document.querySelectorAll(".reviews__main-content")
+);
+const stagesColumns = Array.from(document.querySelectorAll(".stages-info"));
+
+function changeHeight(elementsArray) {
     let maxColHeight = 0;
-    const columns = Array.from(document.querySelectorAll(".stages-info"));
-
-    columns.forEach((el) => {
-        el.style.height = "auto";
-    })
-
-    columns.forEach((el) => {
+    for (const el of elementsArray) {
         if (el.offsetHeight > maxColHeight) {
             maxColHeight = el.offsetHeight;
         }
-    });
+    }
 
-    columns.forEach((el) => {
+    for (const el of elementsArray) {
         el.style.height = `${maxColHeight}px`;
-    });
+    }
 }
 
-changeStagesHeight();
-
-window.addEventListener("resize", (e) => changeStagesHeight());
+window.onload = function () {
+    changeHeight(reviewsColumns);
+    changeHeight(stagesColumns);
+};

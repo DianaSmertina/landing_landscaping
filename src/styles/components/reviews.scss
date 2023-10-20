@@ -10,7 +10,7 @@
 
 .reviews-container__wrapper {
     background-color: $light-color;
-    height: 393px;
+    height: auto;
     position: relative;
     user-select: none;
 }
@@ -48,19 +48,44 @@
     margin-bottom: 20px;
 }
 
+.reviews-text {
+    padding-bottom: 40px;
+}
+
 .reviews-date {
-    position: absolute;
-    padding-bottom: 30px;
-    bottom: 0;
+   padding-bottom: 30px;
 }
 
 .reviews__drag-circle {
     top: 175px;
-    right: 25%;
+    right: 27%;
     transform: translate(50%, 0);
 }
 
 .reviews__btn {
     margin-top: 50px;
     margin-bottom: 70px;
+}
+
+@media (max-width: 1100px) {
+    .reviews__drag-circle {
+        display: none;
+    }
+
+    .reviews-link {
+        margin-bottom: 15px;
+    }
+
+    .reviews-image {
+        margin-bottom: 15px;
+    }
+
+    .reviews-date {
+        padding-bottom: 15px;
+    }
+
+    .reviews__btn {
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
 }

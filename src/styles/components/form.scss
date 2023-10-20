@@ -2,7 +2,6 @@
 
 .connection {
     background-color: $brand-color;
-    height: 900px;
     width: 100%;
     border-radius: 40px;
     padding-top: 70px;
@@ -175,3 +174,98 @@
     text-decoration: underline;
     line-height: 21px;
 }
+
+.submit-btn {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 1233px) {
+    .data__street {
+        display: block;
+    }
+}
+
+@media (max-width: 1100px) {
+    .data {
+        gap: 20px;
+        padding-top: 10px;
+    }
+
+    .data__title {
+        width: 25%;
+    }
+    
+    .data__info {
+        width: 75%;
+    }
+
+    .data__info .connection-link {
+        font-size: 16px;
+    }
+
+    .data__street {
+        display: inline;
+    }
+
+    .connection {
+        padding-top: 27px;
+    }
+
+    .connection .connection__title {
+        margin-bottom: 27px;
+    }
+
+    .contact .contact__name, .contact .contact__data {
+        font-size: 16px;
+    }
+
+    .data:first-child {
+        padding-bottom: 10px;
+    }
+
+    .contacts {
+        margin-top: -10px;
+    }
+
+    .contact {
+        height: 70px;
+    }
+
+    .form__input {
+        font-size: 14px;
+        padding-bottom: 2%;
+        width: 100%;
+    }
+    
+    .form__input::placeholder {
+        font-size: 14px;
+        padding-bottom: 2px;
+    }
+    
+    .form__block {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .form {
+        gap: 5px;
+    }
+
+    .form__textarea-title {
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        margin-top: 5px;
+        margin-bottom: 20px
+    }
+
+    .form__checkbox + label::before {
+        width: 18px;
+        height: 18px;
+    }
+
+    .form__agreement-link {
+        font-size: 14px;
+    }
+} 

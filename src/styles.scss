@@ -1,6 +1,7 @@
 @import "./styles/constants.scss";
 @import "./styles/buttons.scss";
 @import "./styles/base.scss";
+@import "./styles/components/header.scss";
 @import "./styles/components/services.scss";
 @import "./styles/components/main-block.scss";
 @import "./styles/components/statistics.scss";
@@ -11,88 +12,3 @@
 @import "./styles/components/faq.scss";
 @import "./styles/components/form.scss";
 @import "./styles/components/footer.scss";
-
-
-* {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-html {
-    font-size: 16px;
-    font-family: Tektur, "Verdana", Sans-Serif;
-}
-
-body {
-    background-color: $background-color;
-    margin: 0;
-}
-
-p {
-    margin-block-start: 0rem;
-    margin-block-end: 0rem;
-}
-
-button {
-    padding-block: 0rem;
-    padding-inline: 0rem;
-    border-width: 0rem;
-    border-style: none;
-}
-
-a {
-    text-decoration: none;
-    cursor: pointer;
-    color: inherit;
-}
-
-.header__nav-link {
-    font-family: "Inter", sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%;
-}
-
-.header__nav-link:hover {
-    text-decoration: underline;
-}
-
-.header__nav-list {
-    display: inline-flex;
-    align-items: center;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.header__nav-list li a {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    color: $dark-color;
-    padding: 1.1875rem 0.94rem;
-}
-
-.header__nav-list li:nth-last-child(1) a {
-    padding: 1.1875rem 0 1.1875rem 0.94rem;
-}
-
-.content-wrapper {
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 0 30px;
-}
-
-header {
-    padding-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 36px;
-}
-
-.logo {
-    width: 78px;
-    height: 78px;
-}

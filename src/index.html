@@ -28,7 +28,7 @@
     <body>
         <div class="content-wrapper">
             <header>
-                <img class="logo" src="./img/logo.svg" alt="За стеклом" />
+                <div class="logo"></div>
                 <ul class="header__nav-list">
                     <li class="header__nav-link">
                         <a href="#advantages">Преимущества</a>
@@ -46,6 +46,9 @@
                         <a href="#contacts">Контакты</a>
                     </li>
                 </ul>
+                <div class="header__burger">
+                    <img src="./img/burger.svg" alt="menu" />
+                </div>
             </header>
         </div>
         <main>
@@ -65,8 +68,8 @@
                         <div class="title-block__row">
                             <div class="container-img">
                                 <p class="main-text-title">
-                                    От сложных инженерных работ<br />
-                                    до уютного участка —<br />
+                                    От сложных инженерных работ до уютного
+                                    участка —<br />
                                     превратите свою мечту в реальность!
                                 </p>
                                 <div class="image-mainscreen third-img"></div>
@@ -74,8 +77,17 @@
                             </div>
                             <p class="main-title third-row-text">участка</p>
                         </div>
+                        <img
+                            src="./img/mainBlockImages/tablet-main.png"
+                            alt="Пример дизайна"
+                            class="main-cover-tablet"
+                        />
                     </div>
-                    <a href="#contacts"><button class="btn title-block-btn">Заказать звонок</button></a>
+                    <a href="#contacts"
+                        ><button class="btn title-block-btn">
+                            Заказать звонок
+                        </button></a
+                    >
                 </div>
                 <div class="statistics">
                     <div class="stat-data statistics__first">
@@ -107,10 +119,15 @@
                     <p class="title-secondary">Что мы делаем</p>
                     <ul class="services__list">
                         <li class="service service-partial">
-                            <div class="service__title inform-text">
-                                Установка систем автополива
+                            <div class="service__visible">
+                                <div class="service__title inform-text">
+                                    Установка систем автополива
+                                </div>
+                                <div class="service__arrow">
+                                    <img src="./img/arrow.svg" />
+                                </div>
                             </div>
-                            <div class="service__description none">
+                            <div class="service__description">
                                 <div class="service__cover-container">
                                     <img
                                         src="./img/services/service1.png"
@@ -124,15 +141,17 @@
                                     регулярного полива вручную.
                                 </p>
                             </div>
-                            <div class="service__arrow">
-                                <img src="./img/arrow.svg" />
-                            </div>
                         </li>
                         <li class="service service-partial">
-                            <div class="service__title inform-text">
-                                Устройство газона
+                            <div class="service__visible">
+                                <div class="service__title inform-text">
+                                    Устройство газона
+                                </div>
+                                <div class="service__arrow">
+                                    <img src="./img/arrow.svg" />
+                                </div>
                             </div>
-                            <div class="service__description none">
+                            <div class="service__description">
                                 <div class="service__cover-container">
                                     <img
                                         src="./img/services/service2.png"
@@ -148,15 +167,17 @@
                                     газон.
                                 </p>
                             </div>
-                            <div class="service__arrow">
-                                <img src="./img/arrow.svg" />
-                            </div>
                         </li>
                         <li class="service service-partial">
-                            <div class="service__title inform-text">
-                                Мощение дорожек
+                            <div class="service__visible">
+                                <div class="service__title inform-text">
+                                    Мощение дорожек
+                                </div>
+                                <div class="service__arrow">
+                                    <img src="./img/arrow.svg" />
+                                </div>
                             </div>
-                            <div class="service__description none">
+                            <div class="service__description">
                                 <div class="service__cover-container">
                                     <img
                                         src="./img/services/service3.png"
@@ -171,15 +192,17 @@
                                     окружающей территорией.
                                 </p>
                             </div>
-                            <div class="service__arrow">
-                                <img src="./img/arrow.svg" />
-                            </div>
                         </li>
                         <li class="service service-partial">
-                            <div class="service__title inform-text">
-                                Капельный полив
+                            <div class="service__visible">
+                                <div class="service__title inform-text">
+                                    Капельный полив
+                                </div>
+                                <div class="service__arrow">
+                                    <img src="./img/arrow.svg" />
+                                </div>
                             </div>
-                            <div class="service__description none">
+                            <div class="service__description">
                                 <div class="service__cover-container">
                                     <img
                                         src="./img/services/service4.png"
@@ -194,15 +217,17 @@
                                     требования растений.
                                 </p>
                             </div>
-                            <div class="service__arrow">
-                                <img src="./img/arrow.svg" />
-                            </div>
                         </li>
                         <li class="service service-partial">
-                            <div class="service__title inform-text">
-                                Освещение участка
+                            <div class="service__visible">
+                                <div class="service__title inform-text">
+                                    Освещение участка
+                                </div>
+                                <div class="service__arrow">
+                                    <img src="./img/arrow.svg" />
+                                </div>
                             </div>
-                            <div class="service__description none">
+                            <div class="service__description">
                                 <div class="service__cover-container">
                                     <img
                                         src="./img/services/service5.png"
@@ -216,15 +241,17 @@
                                     эффект. Для этого учтем архитектуру участка.
                                 </p>
                             </div>
-                            <div class="service__arrow">
-                                <img src="./img/arrow.svg" />
-                            </div>
                         </li>
                         <li class="service service-partial">
-                            <div class="service__title inform-text">
-                                Посадка/Озеленение
+                            <div class="service__visible">
+                                <div class="service__title inform-text">
+                                    Посадка/Озеленение
+                                </div>
+                                <div class="service__arrow">
+                                    <img src="./img/arrow.svg" />
+                                </div>
                             </div>
-                            <div class="service__description none">
+                            <div class="service__description">
                                 <div class="service__cover-container">
                                     <img
                                         src="./img/services/service6.png"
@@ -239,15 +266,17 @@
                                     уход за растениями.
                                 </p>
                             </div>
-                            <div class="service__arrow">
-                                <img src="./img/arrow.svg" />
-                            </div>
                         </li>
                         <li class="service service-partial">
-                            <div class="service__title inform-text">
-                                Антиобледенение дорожек
+                            <div class="service__visible">
+                                <div class="service__title inform-text">
+                                    Антиобледенение дорожек
+                                </div>
+                                <div class="service__arrow">
+                                    <img src="./img/arrow.svg" />
+                                </div>
                             </div>
-                            <div class="service__description none">
+                            <div class="service__description">
                                 <div class="service__cover-container">
                                     <img
                                         src="./img/services/service7.png"
@@ -263,15 +292,17 @@
                                     условиях.
                                 </p>
                             </div>
-                            <div class="service__arrow">
-                                <img src="./img/arrow.svg" />
-                            </div>
                         </li>
                         <li class="service service-partial">
-                            <div class="service__title inform-text">
-                                Дренажная система
+                            <div class="service__visible">
+                                <div class="service__title inform-text">
+                                    Дренажная система
+                                </div>
+                                <div class="service__arrow">
+                                    <img src="./img/arrow.svg" />
+                                </div>
                             </div>
-                            <div class="service__description none">
+                            <div class="service__description">
                                 <div class="service__cover-container">
                                     <img
                                         src="./img/services/service8.png"
@@ -286,15 +317,17 @@
                                     условия.
                                 </p>
                             </div>
-                            <div class="service__arrow">
-                                <img src="./img/arrow.svg" />
-                            </div>
                         </li>
                         <li class="service service-partial">
-                            <div class="service__title inform-text">
-                                Зоны для пикника
+                            <div class="service__visible">
+                                <div class="service__title inform-text">
+                                    Зоны для пикника
+                                </div>
+                                <div class="service__arrow">
+                                    <img src="./img/arrow.svg" />
+                                </div>
                             </div>
-                            <div class="service__description none">
+                            <div class="service__description">
                                 <div class="service__cover-container">
                                     <img
                                         src="./img/services/service9.png"
@@ -309,15 +342,17 @@
                                     печи.
                                 </p>
                             </div>
-                            <div class="service__arrow">
-                                <img src="./img/arrow.svg" />
-                            </div>
                         </li>
                         <li class="service service-partial">
-                            <div class="service__title inform-text">
-                                Детские площадки
+                            <div class="service__visible">
+                                <div class="service__title inform-text">
+                                    Детские площадки
+                                </div>
+                                <div class="service__arrow">
+                                    <img src="./img/arrow.svg" />
+                                </div>
                             </div>
-                            <div class="service__description none">
+                            <div class="service__description">
                                 <div class="service__cover-container">
                                     <img
                                         src="./img/services/service10.png"
@@ -334,13 +369,15 @@
                                     безопасной.
                                 </p>
                             </div>
-                            <div class="service__arrow">
-                                <img src="./img/arrow.svg" />
-                            </div>
                         </li>
                         <li class="service service-partial">
-                            <div class="service__title inform-text">
-                                Дополнительные услуги
+                            <div class="service__visible">
+                                <div class="service__title inform-text">
+                                    Дополнительные услуги
+                                </div>
+                                <div class="service__arrow">
+                                    <img src="./img/arrow.svg" />
+                                </div>
                             </div>
                             <div class="service__description">
                                 <div class="service__cover-container">
@@ -354,12 +391,13 @@
                                     подвод коммуникаций к дому и др.
                                 </p>
                             </div>
-                            <div class="service__arrow">
-                                <img src="./img/arrow.svg" />
-                            </div>
                         </li>
                     </ul>
-                    <a href="#contacts"><button class="btn services__btn">Заказать услугу</button></a>
+                    <a href="#contacts"
+                        ><button class="btn services__btn">
+                            Заказать услугу
+                        </button></a
+                    >
                 </div>
                 <div class="examples" id="examples">
                     <p class="title-secondary">Примеры работ</p>
@@ -368,7 +406,7 @@
                             <div class="example-block">
                                 <img
                                     class="example-block__img example-big-img"
-                                    src="./img/example1.png"
+                                    src="./img/examples/example1.png"
                                     alt="Участок счастья"
                                 />
                                 <p class="example-block__text inform-text">
@@ -381,7 +419,7 @@
                                 <div class="example-block">
                                     <img
                                         class="example-block__img"
-                                        src="./img/example2.png"
+                                        src="./img/examples/example2.png"
                                         alt="Рай у шатра"
                                     />
                                     <p class="example-block__text inform-text">
@@ -391,7 +429,7 @@
                                 <div class="example-block">
                                     <img
                                         class="example-block__img"
-                                        src="./img/example3.png"
+                                        src="./img/examples/example3.png"
                                         alt="Дерево и стиль"
                                     />
                                     <p class="example-block__text inform-text">
@@ -403,7 +441,7 @@
                                 <div class="example-block">
                                     <img
                                         class="example-block__img"
-                                        src="./img/example4.png"
+                                        src="./img/examples/example4.png"
                                         alt="Уют"
                                     />
                                     <p class="example-block__text inform-text">
@@ -413,7 +451,7 @@
                                 <div class="example-block">
                                     <img
                                         class="example-block__img"
-                                        src="./img/example5.png"
+                                        src="./img/examples/example5.png"
                                         alt="На веранде"
                                     />
                                     <p class="example-block__text inform-text">
@@ -423,7 +461,7 @@
                                 <div class="example-block">
                                     <img
                                         class="example-block__img"
-                                        src="./img/example6.png"
+                                        src="./img/examples/example6.png"
                                         alt="Луговой сад"
                                     />
                                     <p class="example-block__text inform-text">
@@ -433,7 +471,73 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#contacts"><button class="examples-btn btn">Заказать проект</button></a>
+                    <div class="examples__my-slider">
+                        <div class="example-slider-container">
+                            <img
+                                class="example-slider__img"
+                                src="./img/examples/example2.png"
+                                alt="Рай у шатра"
+                            />
+                            <p class="example-slider__text inform-text">
+                                Проект “Рай у шатра”
+                            </p>
+                        </div>
+                        <div class="example-slider-container">
+                            <img
+                                class="example-slider__img"
+                                src="./img/examples/example3.png"
+                                alt="Дерево и стиль"
+                            />
+                            <p class="example-slider__text inform-text">
+                                Проект “Дерево и стиль”
+                            </p>
+                        </div>
+                        <div class="example-slider-container">
+                            <img
+                                class="example-slider__img"
+                                src="./img/examples/example4.png"
+                                alt="Уют"
+                            />
+                            <p class="example-slider__text inform-text">
+                                Проект “Уют”
+                            </p>
+                        </div>
+                        <div class="example-slider-container">
+                            <img
+                                class="example-slider__img"
+                                src="./img/examples/example5.png"
+                                alt="На веранде"
+                            />
+                            <p class="example-slider__text inform-text">
+                                Проект “на веранде”
+                            </p>
+                        </div>
+                        <div class="example-slider-container">
+                            <img
+                                class="example-slider__img"
+                                src="./img/examples/example6.png"
+                                alt="Луговой сад"
+                            />
+                            <p class="example-slider__text inform-text">
+                                Проект “Луговой сад”
+                            </p>
+                        </div>
+                        <div class="example-slider-container">
+                            <img
+                                class="example-slider__img example-big-img"
+                                src="./img/examples/example1.png"
+                                alt="Участок счастья"
+                            />
+                            <p class="example-slider__text inform-text">
+                                Проект “Участок счастья”
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#contacts"
+                        ><button class="examples-btn btn">
+                            Заказать проект
+                        </button></a
+                    >
                 </div>
                 <div class="advantages" id="advantages">
                     <p class="title-secondary">Преимущества</p>
@@ -484,7 +588,7 @@
                         <div class="stages-container">
                             <div class="stages-container__wrapper">
                                 <img
-                                    src="./img/slider1.png"
+                                    src="./img/sliders/slider1.png"
                                     alt="Исследование участка"
                                     class="stages-image"
                                 />
@@ -509,7 +613,7 @@
                         <div class="stages-container">
                             <div class="stages-container__wrapper">
                                 <img
-                                    src="./img/slider2.png"
+                                    src="./img/sliders/slider2.png"
                                     alt="План благоустройства"
                                     class="stages-image"
                                 />
@@ -532,7 +636,7 @@
                         <div class="stages-container">
                             <div class="stages-container__wrapper">
                                 <img
-                                    src="./img/slider3.png"
+                                    src="./img/sliders/slider3.png"
                                     alt="Дизайн участка"
                                     class="stages-image"
                                 />
@@ -557,7 +661,7 @@
                         <div class="stages-container">
                             <div class="stages-container__wrapper">
                                 <img
-                                    src="./img/slider3.png"
+                                    src="./img/sliders/slider3.png"
                                     alt="Дизайн участка"
                                     class="stages-image"
                                 />
@@ -582,7 +686,7 @@
                         <div class="stages-container">
                             <div class="stages-container__wrapper">
                                 <img
-                                    src="./img/slider3.png"
+                                    src="./img/sliders/slider3.png"
                                     alt="Дизайн участка"
                                     class="stages-image"
                                 />
@@ -607,7 +711,7 @@
                         <div class="stages-container">
                             <div class="stages-container__wrapper">
                                 <img
-                                    src="./img/slider3.png"
+                                    src="./img/sliders/slider3.png"
                                     alt="Дизайн участка"
                                     class="stages-image"
                                 />
@@ -632,7 +736,7 @@
                         <div class="stages-container">
                             <div class="stages-container__wrapper">
                                 <img
-                                    src="./img/slider3.png"
+                                    src="./img/sliders/slider3.png"
                                     alt="Дизайн участка"
                                     class="stages-image"
                                 />
@@ -656,7 +760,7 @@
                         <div class="stages-container">
                             <div class="stages-container__wrapper">
                                 <img
-                                    src="./img/slider3.png"
+                                    src="./img/sliders/slider3.png"
                                     alt="Дизайн участка"
                                     class="stages-image"
                                 />
@@ -679,7 +783,7 @@
                         <div class="stages-container">
                             <div class="stages-container__wrapper">
                                 <img
-                                    src="./img/slider3.png"
+                                    src="./img/sliders/slider3.png"
                                     alt="Дизайн участка"
                                     class="stages-image"
                                 />
@@ -703,7 +807,7 @@
                         <div class="stages-container">
                             <div class="stages-container__wrapper">
                                 <img
-                                    src="./img/slider3.png"
+                                    src="./img/sliders/slider3.png"
                                     alt="Дизайн участка"
                                     class="stages-image"
                                 />
@@ -726,7 +830,7 @@
                         <div class="stages-container">
                             <div class="stages-container__wrapper">
                                 <img
-                                    src="./img/slider3.png"
+                                    src="./img/sliders/slider3.png"
                                     alt="Дизайн участка"
                                     class="stages-image"
                                 />

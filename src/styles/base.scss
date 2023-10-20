@@ -1,5 +1,44 @@
 @import "./constants.scss";
 
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 16px;
+    font-family: Tektur, "Verdana", Sans-Serif;
+}
+
+body {
+    background-color: $background-color;
+    margin: 0;
+}
+
+p {
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+}
+
+button {
+    padding-block: 0rem;
+    padding-inline: 0rem;
+    border-width: 0rem;
+    border-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+.content-wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
 .inform-text {
     color: $dark-color;
     font-family: "Tektur";
@@ -37,8 +76,27 @@
     font-weight: 300;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1100px) {
+    .title-secondary {
+        margin: 90px 0 25px 0;
+    }
+}
+
+@media (max-width: 900px) {
     .general-text {
         font-size: 12px;
+    }
+
+    .title-secondary {
+        font-size: 27px;
+        line-height: 19px;
+    }
+
+    .inform-text {
+        font-size: 18px;
+    }
+
+    .content-wrapper {
+        padding: 0 20px;
     }
 }

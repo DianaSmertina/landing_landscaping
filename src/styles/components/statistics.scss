@@ -2,6 +2,7 @@
 
 .statistics {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .stat-data {
@@ -19,7 +20,10 @@
             rgba(0, 0, 0, 0.2) 0%,
             rgba(0, 0, 0, 0.2) 100%
         ),
-        url("./img/120variants.png"), lightgray 50% / cover no-repeat;
+        url("./img/statImages/120variants-new.png"), lightgray 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .statistics__second {
@@ -28,7 +32,10 @@
             rgba(0, 0, 0, 0.2) 0%,
             rgba(0, 0, 0, 0.2) 100%
         ),
-        url("./img/85styles.png"), lightgray 50% / cover no-repeat;
+        url("./img/statImages/85styles.png"), lightgray 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .statistics__third {
@@ -37,7 +44,10 @@
             rgba(0, 0, 0, 0.2) 0%,
             rgba(0, 0, 0, 0.2) 100%
         ),
-        url("./img/50solution.png"), lightgray 50% / cover no-repeat;
+        url("./img/statImages/50solution.png"), lightgray 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .statistics__forth {
@@ -46,7 +56,10 @@
             rgba(0, 0, 0, 0.2) 0%,
             rgba(0, 0, 0, 0.2) 100%
         ),
-        url("./img/12years.png"), lightgray 50% / cover no-repeat;
+        url("./img/statImages/12years.png"), lightgray 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
 }
 
 .stat-data__caption {
@@ -69,4 +82,22 @@
     font-weight: 500;
     margin-top: 15px;
     margin-bottom: 52px;
+}
+
+@media (max-width: 1100px) {
+    .stat-data {
+        width: 50%;
+        height: 250px;
+        max-width: 600px;
+    }
+
+    .stat-number {
+        font-size: 96px;
+        line-height: 67px;
+    }
+
+    .stat-description {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }

@@ -10,6 +10,13 @@
     cursor: pointer;
 }
 
+.service__visible {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 .service-partial .service__description {
     opacity: 0;
     visibility: hidden;
@@ -72,4 +79,42 @@
     object-fit: cover;
     width: 370px;
     height: 250px;
+}
+
+@media (max-width: 1100px) {
+    .service {
+        height: 44px;
+        padding-top: 10px;
+        flex-direction: column;
+        justify-content: start;
+        gap: 15px;
+        position: static;
+    }
+
+    .service-full .service__title {
+        width: 95%;
+    }
+
+    .service-full {
+        height: auto;
+    }
+
+    .service__description {
+        position: static;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .service__text {
+        max-width: 100%;
+    }
+
+    .service__cover {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .services__btn {
+        margin-top: 0;
+    }
 }

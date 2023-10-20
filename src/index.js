@@ -3,12 +3,19 @@ import { tns } from "../node_modules/tiny-slider/src/tiny-slider";
 
 var slider = tns({
     container: ".stages__my-slider",
-    items: 2,
+    items: 1,
     slideBy: "page",
     loop: false,
     controls: false,
     mouseDrag: true,
     gutter: 20,
+    arrowKeys: true,
+    edgePadding: 10,
+    responsive: {
+        1201: {
+            items: 2,
+        }
+    }
 });
 
 var slider = tns({
@@ -19,6 +26,25 @@ var slider = tns({
     controls: false,
     mouseDrag: true,
     gutter: 20,
+    arrowKeys: true,
+    edgePadding: 20,
+});
+
+var slider = tns({
+    container: ".examples__my-slider",
+    items: 2,
+    slideBy: "page",
+    loop: false,
+    controls: false,
+    mouseDrag: true,
+    gutter: 10,
+    arrowKeys: true,
+    edgePadding: 20,
+    responsive: {
+        850: {
+            items: 3,
+        },
+    },
 });
 
 function changeVisibility(elements, type) {
@@ -37,8 +63,8 @@ serviceElementsArray.forEach((el) => {
     el.addEventListener("click", (e) => {
         const ulElem = e.target.closest("li");
         changeVisibility(ulElem, "service");
-    })
-})
+    });
+});
 
 const questionElements = document.querySelectorAll(".question");
 const questionElementsArray = Array.from(questionElements);
@@ -46,15 +72,15 @@ questionElementsArray.forEach((el) => {
     el.addEventListener("click", (e) => {
         const ulElem = e.target.closest("li");
         changeVisibility(ulElem, "question");
-    })
-})
+    });
+});
 
 function hideDragCircle(container, circle) {
     container.addEventListener("mousedown", () => {
         if (circle) {
             circle.remove();
         }
-    })
+    });
 }
 
 const stagesSlider = document.querySelector(".stages__my-slider");
@@ -63,3 +89,26 @@ const circleStages = document.querySelector(".stages__drag-circle");
 const circleReviews = document.querySelector(".reviews__drag-circle");
 hideDragCircle(stagesSlider, circleStages);
 hideDragCircle(reviewsSlider, circleReviews);
+
+function changeStagesHeight() {
+    let maxColHeight = 0;
+    const columns = Array.from(document.querySelectorAll(".stages-info"));
+
+    columns.forEach((el) => {
+        el.style.height = "auto";
+    })
+
+    columns.forEach((el) => {
+        if (el.offsetHeight > maxColHeight) {
+            maxColHeight = el.offsetHeight;
+        }
+    });
+
+    columns.forEach((el) => {
+        el.style.height = `${maxColHeight}px`;
+    });
+}
+
+changeStagesHeight();
+
+window.addEventListener("resize", (e) => changeStagesHeight());

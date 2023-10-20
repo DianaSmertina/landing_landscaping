@@ -10,8 +10,8 @@
     line-height: 7.437vw;
     letter-spacing: -0.2125rem;
     text-transform: uppercase;
-    margin-left: -0.625rem;
-    padding-right: 0.625rem;
+    // margin-left: -0.625rem;
+    // padding-right: 0.625rem;
 }
 
 .orange {
@@ -27,7 +27,7 @@
     gap: 4.8125vw;
 }
 
-.title-block__row:last-child {
+.title-block__row:nth-child(3) {
     gap: 2.625vw;
 }
 
@@ -51,21 +51,21 @@
 }
 
 .first-img {
-    background: url("./img/main-title1.png"), lightgray 50% / cover no-repeat;
+    background: url("./img/mainBlockImages/main-title1.png"), lightgray 50% / cover no-repeat;
     margin-right: 10px;
 }
 
 .second-img {
-    background: url("./img/main-title2.png"), lightgray 50% / cover no-repeat;
+    background: url("./img/mainBlockImages/main-title2.png"), lightgray 50% / cover no-repeat;
 }
 
 .third-img {
-    background: url("./img/main-title3.png"), lightgray 50% / cover no-repeat;
+    background: url("./img/mainBlockImages/main-title3.png"), lightgray 50% / cover no-repeat;
     margin-right: 16px;
 }
 
 .forth-img {
-    background: url("./img/main-title4.png"), lightgray 50% / cover no-repeat;
+    background: url("./img/mainBlockImages/main-title4.png"), lightgray 50% / cover no-repeat;
 }
 
 .main-text-title {
@@ -82,4 +82,70 @@
 
 .title-block-btn {
     margin: 20px 0;
+}
+
+.main-cover-tablet {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    .forth-img, .third-img {
+        display: none;
+    }
+
+    .title-block__row {
+        justify-content: space-between;
+    }
+
+    .main-text-title {
+        width: auto;
+    }
+
+    .title-block__row:first-child {
+        gap: 0;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 850px) {
+    .main-title {
+        font-size: 10.46875vw;
+        line-height: 65px;
+        letter-spacing: -1.34px;
+    }
+
+    .image-mainscreen {
+        display: none;
+    }
+
+    .title-block__row:nth-child(3) {
+        flex-direction: column-reverse;
+        align-items: start;
+        gap: 2.34375vw;
+    }
+
+    .main-text-title {
+        width: 79.8vw;
+    }
+
+    .title-block-wrapper {
+        gap: 2.34375vw;
+    }
+
+    .main-cover-tablet {
+        display: block;
+        width: 100%;
+        height: 340px;
+        object-fit: cover;
+    }
+
+    .title-block-btn {
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .main-title {
+        line-height: 47px;
+    }
 }

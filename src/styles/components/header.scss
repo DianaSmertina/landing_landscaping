@@ -1,0 +1,75 @@
+.header__nav-link {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+}
+
+.header__nav-link:hover {
+    text-decoration: underline;
+}
+
+.header__nav-list {
+    display: inline-flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header__nav-list li a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: $dark-color;
+    padding: 1.1875rem 0.94rem;
+}
+
+.header__nav-list li:nth-last-child(1) a {
+    padding: 1.1875rem 0 1.1875rem 0.94rem;
+}
+
+header {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px;
+}
+
+.logo {
+    width: 78px;
+    height: 78px;
+    background-size: 78px 78px;
+    background-image: url("./img/logo.svg");
+    background-repeat: no-repeat;
+}
+
+.header__burger {
+    display: none;
+}
+
+@media (max-width: 850px) {
+    .header__burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .header__nav-list {
+        display: none;
+    }
+
+    .logo {
+        width: 30px;
+        height: 26px;
+        background-size: 30px 26px;
+        background-image: url("./img/logo-tab-mob.svg");
+        background-repeat: no-repeat;
+    }
+
+    header {
+        margin-bottom: 30px;
+    }
+}

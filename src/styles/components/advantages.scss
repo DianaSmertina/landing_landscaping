@@ -97,3 +97,33 @@
         margin-top: 35px;
     }
 }
+
+@media (max-width: 640px) {
+    .advantage {
+        height: 13.9vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .advantages__grass {
+        width: 187vw;
+        left: 100%;
+        top: 10px;
+    }
+
+    .advantage {
+        height: 89px;
+    }
+
+    .advantages__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 350px) {
+    .advantages__grass {
+        width: 660px;
+    }
+}

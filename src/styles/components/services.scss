@@ -118,3 +118,29 @@
         margin-top: 0;
     }
 }
+
+@media (max-width: 420px) {
+    .service {
+        height: 34px;
+        padding-top: 5px;
+        gap: 5px;
+    }
+
+    .service-full {
+        height: auto; 
+    }
+
+    .service__description {
+        gap: 10px;
+    }
+
+    .service__cover {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 330px) {
+    .service__title span {
+        display: none;
+    }
+}

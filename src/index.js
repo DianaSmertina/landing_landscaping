@@ -8,42 +8,52 @@ var slider = tns({
     loop: false,
     controls: false,
     mouseDrag: true,
-    gutter: 20,
+    gutter: 10,
     edgePadding: 10,
+    arrowKeys: true,
     responsive: {
         1101: {
             items: 2,
+            gutter: 20,
         },
     },
 });
 
 var slider = tns({
     container: ".reviews__my-slider",
-    items: 2,
+    items: 1,
     slideBy: "page",
     loop: false,
     controls: false,
     mouseDrag: true,
     gutter: 20,
     edgePadding: 20,
+    arrowKeys: true,
     responsive: {
         1101: {
             items: 4,
         },
+        501: {
+            items: 2,
+        }
     },
 });
 
 var slider = tns({
     container: ".examples__my-slider",
-    items: 2,
+    items: 1,
     slideBy: "page",
     loop: false,
     controls: false,
     mouseDrag: true,
     gutter: 10,
     edgePadding: 20,
+    arrowKeys: true,
     responsive: {
-        850: {
+        421: {
+            items: 2,
+        },
+        851: {
             items: 3,
         },
     },

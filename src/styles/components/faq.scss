@@ -107,9 +107,8 @@
     }
 
     .faq__list .question {
-        padding-top: 15px;
+        padding: 15px 0;
         flex-direction: column;
-        padding-bottom: 15px;
     }
 
     .question__text {
@@ -130,5 +129,11 @@
 
     .faq__list .question-full {
         height: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .faq__list .question {
+        padding: 10px 0;
     }
 }

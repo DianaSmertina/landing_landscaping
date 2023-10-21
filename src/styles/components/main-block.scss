@@ -98,7 +98,8 @@
     }
 
     .main-text-title {
-        width: auto;
+        width: 100%;
+        margin: 0;
     }
 
     .title-block__row:first-child {
@@ -124,10 +125,6 @@
         gap: 2.34375vw;
     }
 
-    .main-text-title {
-        width: 79.8vw;
-    }
-
     .title-block-wrapper {
         gap: 2.34375vw;
     }
@@ -147,5 +144,27 @@
 @media (max-width: 640px) {
     .main-title {
         line-height: 47px;
+    }
+
+    .main-text-title {
+        font-size: 2.8125vw;
+    }
+}
+
+@media (max-width: 420px) {
+    .main-title {
+        line-height: 32px;
+    }
+
+    .main-cover-tablet {
+        height: 61.86vh;
+    }
+
+    .main-title {
+        font-size: 10.555vw;
+    }
+
+    .main-text-title {
+        font-size: 3.3vw;;
     }
 }

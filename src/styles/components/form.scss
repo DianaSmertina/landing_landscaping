@@ -89,6 +89,7 @@
     font-weight: 400;
     width: 50%;
     padding-bottom: 10px;
+    padding-left: 0;
 }
 
 .form__input:focus {
@@ -101,6 +102,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
+    padding-left: 0;
 }
 
 .form__textarea {
@@ -187,12 +189,12 @@
 
 @media (max-width: 1100px) {
     .data {
-        gap: 20px;
+        gap: 18px;
         padding-top: 10px;
     }
 
     .data__title {
-        width: 25%;
+        width: 23%;
     }
     
     .data__info {
@@ -209,6 +211,7 @@
 
     .connection {
         padding-top: 27px;
+        border-radius: 20px;
     }
 
     .connection .connection__title {
@@ -229,30 +232,38 @@
 
     .contact {
         height: 70px;
+        gap: 7px;
     }
 
     .form__input {
         font-size: 14px;
-        padding-bottom: 2%;
+        padding-bottom: 3px;
         width: 100%;
     }
     
     .form__input::placeholder {
         font-size: 14px;
-        padding-bottom: 2px;
+        padding-bottom: 3px;
     }
     
     .form__block {
         flex-direction: column;
-        gap: 5px;
+        gap: 10px;
     }
 
     .form {
-        gap: 5px;
+        gap: 10px;
+        margin-top: -4px;
     }
 
     .form__textarea-title {
         font-size: 14px;
+    }
+
+    .form__textarea {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        height: 175px;
     }
 
     .submit-btn {
@@ -265,7 +276,113 @@
         height: 18px;
     }
 
+    .form__checkbox:checked + label::before {
+        background-size: 18px;
+    }
+
     .form__agreement-link {
         font-size: 14px;
     }
-} 
+}
+
+@media (max-width: 561px) {
+    .data__street {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    .data__street {
+        display: inline;
+    }
+
+    .connection {
+        padding-top: 33px;
+    }
+
+    .data {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .data__title {
+        width: 100%;
+    }
+
+    .data__info {
+        width: 100%;
+    }
+    
+    .contact:first-child {
+        border-bottom: none;
+    }
+
+    .contacts {
+        display: flex;
+        gap: 46px;
+    }
+
+    .contact {
+        height: auto;
+        display: block;
+        margin: 15px 0 10px 0;
+    }
+
+    .contact__name {
+        margin-bottom: 5px;
+    }
+
+    .data__info .connection-link {
+        font-size: 14px;
+    }
+
+    .contact .contact__name, .contact .contact__data {
+        font-size: 14px;
+    }
+
+    .form__input::placeholder, .form__textarea-title, .form__input, .form__agreement-link {
+        font-size: 12px;
+        padding-bottom: 1px;
+    }
+
+    .form__block, .form {
+        gap: 0;
+    }
+
+    .form__textarea-title-new-line {
+        display: block;
+    }
+
+    .form__textarea-title {
+        margin-top: 10px;
+    }
+
+    .form__checkbox + label::before {
+        width: 12px;
+        height: 12px;
+        margin-right: 10px;
+    }
+
+    .form__checkbox:checked + label::before {
+        background-size: 12px;
+    }
+
+    .form__textarea {
+        margin-bottom: 0;
+        height: 180px;
+    }
+
+    .submit-btn {
+        margin-bottom: 4px;
+    }
+}
+
+@media (max-width: 550px) {
+    .data__street {
+        display: block;
+    }
+
+    .connection .connection__title {
+        line-height: 25px;
+    }
+}

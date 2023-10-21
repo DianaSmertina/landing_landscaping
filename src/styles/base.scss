@@ -100,3 +100,21 @@ a {
         padding: 0 20px;
     }
 }
+
+@media (max-width: 500px) {
+    .content-wrapper {
+        padding: 0 10px;
+        overflow-x: hidden;
+        height: auto;
+    }
+
+    .title-secondary {
+        margin: 70px 0 20px 0;
+    }
+}
+
+@media (max-width: 350px) {
+    .title-secondary {
+        line-height: 30px;
+    }
+}

@@ -1,0 +1,58 @@
+@import "../constants.scss";
+
+.menu-modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: $dark-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.menu-modal__close {
+    display: flex;
+    justify-content: end;
+}
+
+.menu-modal__close-img {
+    width: 20px;
+    height: 20px;
+}
+
+.menu-modal__nav-list {
+    list-style: none;
+    padding-left: 0;
+    border-top: 1px solid $light-color;
+    margin-top: 50px;
+}
+
+.menu-modal__nav-link {
+    color: $light-color;
+    font-size: 24px;
+    line-height: 47px;
+    border-bottom: 1px solid $light-color;
+}
+
+.menu-modal__brand {
+    position: absolute;
+    bottom: -10px;
+}
+
+.menu-modal__brand-img {
+    object-fit: cover;
+    width: 98%;
+}
+
+@media (max-width: 420px) {
+    .menu-modal__close-img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .menu-modal__nav-link {
+        color: $light-color;
+        font-size: 18px;
+        line-height: 33px;
+    }
+}

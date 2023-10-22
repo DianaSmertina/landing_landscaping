@@ -153,6 +153,18 @@
     }
 
     .stages-image {
+        height: 240px;
+    }
+}
+
+@media (max-height: 720px) {
+    .stages-image {
+        height: 260px;
+    }
+}
+
+@media (max-height: 693px) {
+    .stages-image {
         height: 285px;
     }
 }

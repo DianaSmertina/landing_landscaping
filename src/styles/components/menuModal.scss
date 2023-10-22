@@ -44,6 +44,12 @@
     width: 98%;
 }
 
+@media (max-width: 500px) {
+    .menu-modal {
+        padding: 15px 10px 0;
+    }
+}
+
 @media (max-width: 420px) {
     .menu-modal__close-img {
         width: 15px;

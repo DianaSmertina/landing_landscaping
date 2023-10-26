@@ -18,11 +18,11 @@ agreementLink.addEventListener("click", (e) => {
 })
 
 function closeModal(e) {
-    if (e.target.classList.contains("send-modal") || e.target.classList.contains("send-modal__close-img")) {
+    if (e.target.classList.contains("send-modal") || e.target.closest("div").classList.contains("send-modal__close")) {
         modalSend.classList.add("none");
         body.classList.remove("no-scroll");
     }
-    if (e.target.classList.contains("agreement-modal") || e.target.classList.contains("agreement-modal__close-img")) {
+    if (e.target.classList.contains("agreement-modal") || e.target.closest("div").classList.contains("agreement-modal__close")) {
         agreement.classList.add("none");
         body.classList.remove("no-scroll");
     }

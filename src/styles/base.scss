@@ -69,6 +69,13 @@ a {
     margin: 120px 0 40px 25%;
 }
 
+.title-secondary::before {
+    display: block;
+	content: "";
+	height: 15px;
+	margin: -15px 0 0;
+}
+
 .footer-text {
     color: $light-color;
     font-family: "Inter";
@@ -83,6 +90,15 @@ a {
 
 .no-scroll {
     overflow: hidden;
+}
+
+.no-select {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+.no-select:focus {
+    outline: none !important;
 }
 
 @media (max-width: 1100px) {
@@ -118,7 +134,7 @@ a {
     }
 
     .title-secondary {
-        margin: 70px 0 20px 0;
+        margin: 90px 0 20px 0;
     }
 }
 

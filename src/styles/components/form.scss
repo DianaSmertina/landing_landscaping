@@ -245,6 +245,15 @@
 .send-modal__close,
 .agreement-modal__close {
     position: absolute;
+    top: 0;
+    right: 0;
+    height: 100px;
+    width: 100px;
+}
+
+.send-modal__close-img,
+.agreement-modal__close-img {
+    position: absolute;
     top: 40px;
     right: 40px;
 }
@@ -377,12 +386,6 @@
         height: 489px;
     }
 
-    .send-modal__close,
-    .agreement-modal__close {
-        top: 25px;
-        right: 25px;
-    }
-
     .send-modal__subtitle {
         max-width: 400px;
     }
@@ -393,6 +396,21 @@
 }
 
 @media (max-width: 640px) {
+    .send-modal__close,
+    .agreement-modal__close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 60px;
+        width: 70px;
+    }
+
+    .send-modal__close-img,
+    .agreement-modal__close-img {
+        top: 25px;
+        right: 25px;
+    }
+
     .agreement-modal__content {
         width: calc(100% - 20px);
         max-height: 95vh;
@@ -413,6 +431,16 @@
 @media (max-width: 561px) {
     .data__street {
         display: block;
+    }
+}
+
+@media (max-width: 550px) {
+    .data__street {
+        display: block;
+    }
+
+    .connection .connection__title {
+        line-height: 25px;
     }
 }
 
@@ -505,15 +533,9 @@
     .submit-btn {
         margin-bottom: 4px;
     }
-}
 
-@media (max-width: 550px) {
     .data__street {
-        display: block;
-    }
-
-    .connection .connection__title {
-        line-height: 25px;
+        display: inline;
     }
 }
 

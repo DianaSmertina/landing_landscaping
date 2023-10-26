@@ -57,20 +57,30 @@ header {
         cursor: pointer;
     }
 
+    .header__burger::before {
+        position: absolute;
+        content: "";
+        height: 50px;
+        width: 50px;
+        right: -10px;
+        top: 0;
+    }
+
     .header__nav-list {
         display: none;
     }
 
     .logo {
         width: 30px;
-        height: 26px;
-        background-size: 30px 26px;
+        height: 28px;
+        background-size: 30px 28px;
         background-image: url("./img/logo-tab-mob.svg");
         background-repeat: no-repeat;
     }
 
     header {
         margin-bottom: 30px;
+        position: relative;
     }
 }
 

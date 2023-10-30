@@ -4,11 +4,19 @@ const close = document.querySelector(".send-modal__close");
 const agreementLink = document.querySelector(".form__agreement-link");
 const agreement = document.querySelector(".agreement-modal")
 const body = document.body;
+const inputs = document.querySelectorAll(".form__input");
+const textarea = document.querySelector(".form__textarea");
+const checkbox = document.querySelector(".form__checkbox");
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     modalSend.classList.remove("none");
     body.classList.add("no-scroll");
+    Array.from(inputs).forEach((el) => {
+        el.value = "";
+    })
+    textarea.value = "";
+    checkbox.checked = false;
 })
 
 agreementLink.addEventListener("click", (e) => {

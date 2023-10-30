@@ -30,6 +30,18 @@
 }
 
 .faq__list .question-full {
+    height: 117px;
+}
+
+.faq__list .question-full:nth-child(1) {
+    height: 80px;
+}
+
+.faq__list .question-full:nth-child(5), .faq__list .question-full:nth-child(6) {
+    height: 100px;
+}
+
+.faq__list .question-full:nth-child(8) {
     height: 157px;
 }
 

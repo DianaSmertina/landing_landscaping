@@ -1,10 +1,20 @@
-function changeVisibility(elements, type) {
-    if (elements.classList.contains(`${type}-partial`)) {
-        elements.classList.remove(`${type}-partial`);
-        elements.classList.add(`${type}-full`);
+function changeVisibility(element, elements, type) {
+    if (type === "service") {
+        elements.forEach((el) => {
+            el.className = "service service-partial no-select";
+        })
     } else {
-        elements.classList.remove(`${type}-full`);
-        elements.classList.add(`${type}-partial`);
+        elements.forEach((el) => {
+            el.className = "question question-partial no-select";
+        })
+    }
+
+    if (element.classList.contains(`${type}-partial`)) {
+        element.classList.remove(`${type}-partial`);
+        element.classList.add(`${type}-full`);
+    } else {
+        element.classList.remove(`${type}-full`);
+        element.classList.add(`${type}-partial`);
     }
 }
 
@@ -13,7 +23,7 @@ const serviceElementsArray = Array.from(serviceElements);
 serviceElementsArray.forEach((el) => {
     el.addEventListener("click", (e) => {
         const ulElem = e.target.closest("li");
-        changeVisibility(ulElem, "service");
+        changeVisibility(ulElem, serviceElementsArray, "service");
     });
 });
 
@@ -22,6 +32,6 @@ const questionElementsArray = Array.from(questionElements);
 questionElementsArray.forEach((el) => {
     el.addEventListener("click", (e) => {
         const ulElem = e.target.closest("li");
-        changeVisibility(ulElem, "question");
+        changeVisibility(ulElem, questionElementsArray, "question");
     });
 });

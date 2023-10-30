@@ -77,6 +77,10 @@ stagesSlider.addEventListener("mouseenter", () => {
     circleStages.classList.remove("none");
 })
 
+circleStages.addEventListener("mouseenter", () => {
+    circleStages.classList.remove("none");
+})
+
 stagesSlider.addEventListener("mouseleave", () => {
     if (!circleStages.classList.contains("none")) {
         circleStages.classList.add("none");
@@ -85,6 +89,10 @@ stagesSlider.addEventListener("mouseleave", () => {
 
 reviewsSlider.addEventListener("mouseenter", () => {
     circleReviews.classList.remove("none");
+})
+
+circleReviews.addEventListener("mouseenter", () => {
+    circleStages.classList.remove("none");
 })
 
 reviewsSlider.addEventListener("mouseleave", () => {

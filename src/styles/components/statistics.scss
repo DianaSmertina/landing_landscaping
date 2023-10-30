@@ -5,6 +5,13 @@
     flex-wrap: wrap;
 }
 
+.statistics-fake {
+    display: block;
+	content: "";
+	height: 15px;
+	margin: -15px 0 0;
+}
+
 .stat-data {
     max-width: 385px;
     width: 25%;

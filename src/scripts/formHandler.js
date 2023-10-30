@@ -12,6 +12,12 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
     modalSend.classList.remove("none");
     body.classList.add("no-scroll");
+    setTimeout(() => {
+        if (!modalSend.classList.contains("none")) {
+            modalSend.classList.add("none");
+            body.classList.remove("no-scroll");
+        }
+    }, 2000);
     Array.from(inputs).forEach((el) => {
         el.value = "";
     })

@@ -78,6 +78,15 @@ footer {
     margin-bottom: 10px;
 }
 
+@media (min-width: 1600px) {
+    .footer__brand {
+        font-size: 663px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: -139px;
+    }
+}
+
 @media (max-width: 1200px) {
     .footer {
         height: 680px;

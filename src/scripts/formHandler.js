@@ -7,6 +7,10 @@ const body = document.body;
 const inputs = document.querySelectorAll(".form__input");
 const textarea = document.querySelector(".form__textarea");
 const checkbox = document.querySelector(".form__checkbox");
+const nameInput = document.querySelector(".name-input");
+const telInput = document.querySelector(".tel-input");
+const areaInput = document.querySelector(".area-input");
+const cityInput = document.querySelector(".city-input");
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();

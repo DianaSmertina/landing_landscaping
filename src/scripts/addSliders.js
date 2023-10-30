@@ -61,7 +61,7 @@ var slider = tns({
 function hideDragCircle(container, circle) {
     container.addEventListener("mousedown", () => {
         if (circle) {
-            circle.remove();
+            circle.classList.add("none");
         }
     });
 }
@@ -72,3 +72,23 @@ const circleStages = document.querySelector(".stages__drag-circle");
 const circleReviews = document.querySelector(".reviews__drag-circle");
 hideDragCircle(stagesSlider, circleStages);
 hideDragCircle(reviewsSlider, circleReviews);
+
+stagesSlider.addEventListener("mouseenter", () => {
+    circleStages.classList.remove("none");
+})
+
+stagesSlider.addEventListener("mouseleave", () => {
+    if (!circleStages.classList.contains("none")) {
+        circleStages.classList.add("none");
+    }
+})
+
+reviewsSlider.addEventListener("mouseenter", () => {
+    circleReviews.classList.remove("none");
+})
+
+reviewsSlider.addEventListener("mouseleave", () => {
+    if (!circleReviews.classList.contains("none")) {
+        circleReviews.classList.add("none");
+    }
+})

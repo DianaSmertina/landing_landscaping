@@ -75,7 +75,6 @@
     height: 100px;
     border-radius: 50%;
     background-color: $brand-color;
-    cursor: pointer;
     z-index: 2;
     display: flex;
     justify-content: center;
@@ -117,7 +116,7 @@
     }
 
     .stages-image {
-        height: 300px;
+        height: 265px;
     }
 
     .stages-title {
@@ -132,6 +131,18 @@
 @media (max-width: 1100px) {
     .stages .title-secondary {
         margin-top: 115px;
+    }
+}
+
+@media (max-width: 1011px) {
+    .stages-image {
+        height: 283px;
+    }
+}
+
+@media (max-width: 940px) {
+    .stages-image {
+        height: 300px;
     }
 }
 
@@ -154,19 +165,31 @@
     }
 
     .stages-image {
+        height: 220px;
+    }
+}
+
+@media (max-width: 789px) {
+    .stages-image {
         height: 240px;
     }
 }
 
-@media (max-height: 720px) {
+@media (max-width: 744px) {
     .stages-image {
-        height: 260px;
+        height: 253px;
     }
 }
 
-@media (max-height: 693px) {
+@media (max-width: 693px) {
     .stages-image {
-        height: 285px;
+        height: 268px;
+    }
+}
+
+@media (max-width: 657px) {
+    .stages-image {
+        height: 280px;
     }
 }
 

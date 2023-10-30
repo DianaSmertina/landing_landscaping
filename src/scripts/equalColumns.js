@@ -4,6 +4,10 @@ const reviewsColumns = Array.from(
 const stagesColumns = Array.from(document.querySelectorAll(".stages-info"));
 
 function changeHeight(elementsArray) {
+    for (const el of elementsArray) {
+        el.style.height = "auto";
+    }
+
     let maxColHeight = 0;
     for (const el of elementsArray) {
         if (el.offsetHeight > maxColHeight) {
@@ -20,3 +24,8 @@ window.onload = function () {
     changeHeight(reviewsColumns);
     changeHeight(stagesColumns);
 };
+
+window.addEventListener("resize", (e) => {
+    changeHeight(reviewsColumns);
+    changeHeight(stagesColumns);
+});

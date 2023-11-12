@@ -48,3 +48,54 @@ function closeModal(e) {
 
 modalSend.addEventListener("click", (e) => closeModal(e));
 agreement.addEventListener("click", (e) => closeModal(e));
+
+function formatPhoneNumber(input) {
+    const onlyNums = Array.from(input.target.value.replace(/\D/g, ''));
+    let cursorPosition = 3;
+    if (onlyNums.length > 1 && onlyNums.length <= 4) {
+        cursorPosition = cursorPosition + onlyNums.length - 1;
+    } else if (onlyNums.length > 4 && onlyNums.length <= 7) {
+        cursorPosition = cursorPosition + onlyNums.length;
+    } else if (onlyNums.length > 7 && onlyNums.length <= 9) {
+        cursorPosition = cursorPosition + onlyNums.length + 1;
+    } else if (onlyNums.length > 9 && onlyNums.length <= 12) {
+        cursorPosition = cursorPosition + onlyNums.length + 2;
+    }
+    requestAnimationFrame(() => {
+        input.target.setSelectionRange(cursorPosition, cursorPosition);
+    })
+
+    function returnValidValue() {
+        let initialString = "+7(___)___-__-__".split("");
+        if (onlyNums.length > 1) {
+            for (let i = 0; i < onlyNums.length; i++) {
+                if (i > 0 && i <= 3) {
+                    initialString[2 + i] = onlyNums[i];
+                } else if (i > 3 && i <= 6) {
+                    initialString[3 + i] = onlyNums[i];
+                } else if (i > 6 && i <= 8) {
+                    initialString[4 + i] = onlyNums[i];
+                } else if (i > 8 && i < 11) {
+                    initialString[5 + i] = onlyNums[i];
+                }
+            }
+        }
+        return initialString.join("");
+    };
+    input.target.value = returnValidValue();
+}
+
+telInput.addEventListener("focus", (e) => {
+    if (e.target.value === "") {
+        e.target.value = "+7(___)___-__-__";
+    }
+    setTimeout(function() {
+        if (e.target.setSelectionRange) {
+            e.target.setSelectionRange(3, 3);
+        } else {
+            e.target.focus();
+            e.target.select();
+        }
+    }, 0);
+});
+telInput.addEventListener("input", (e) => formatPhoneNumber(e));

@@ -40,6 +40,12 @@ a {
     padding: 0 30px;
 }
 
+.slider-content-wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-left: 30px;
+}
+
 .inform-text {
     color: $dark-color;
     font-family: "Tektur";
@@ -124,13 +130,30 @@ a {
     .content-wrapper {
         padding: 0 20px;
     }
+    .slider-content-wrapper {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .advantages-content-wrapper {
+        overflow: hidden;
+        height: auto;
+    }
 }
 
 @media (max-width: 500px) {
     .content-wrapper {
         padding: 0 10px;
+    }
+
+    .advantages-content-wrapper {
         overflow-x: hidden;
         height: auto;
+    }
+
+    .slider-content-wrapper {
+        padding-left: 10px;
     }
 
     .title-secondary {

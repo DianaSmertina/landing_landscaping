@@ -13,7 +13,7 @@
 .question {
     display: flex;
     align-items: flex-start;
-    padding-top: 20px;
+    padding-top: 17px;
     justify-content: space-between;
     position: relative;
     transition: 0.3s;
@@ -22,6 +22,10 @@
 
 .question-partial {
     height: 77px;
+}
+
+.question-partial:nth-child(7), .question-partial:nth-child(8) {
+    height: 103px;
 }
 
 .question__container {
@@ -46,7 +50,7 @@
 }
 
 .question__title {
-    width: 49%;
+    width: 540px;
 }
 
 .question__visible-block {
@@ -58,7 +62,7 @@
 
 .question__text {
     max-width: 370px;
-    width: 45%;
+    width: 55%;
     position: absolute;
     left: 50%;
     top: 0;

@@ -1,12 +1,11 @@
 import { tns } from "../../node_modules/tiny-slider/src/tiny-slider";
 
-var slider = tns({
+var slider1 = tns({
     container: ".stages__my-slider",
     items: 1,
     slideBy: "page",
     loop: false,
     controls: false,
-    navAsThumbnails: true,
     nav: true,
     navPosition: "bottom",
     mouseDrag: true,
@@ -21,13 +20,12 @@ var slider = tns({
     },
 });
 
-var slider = tns({
+var slider2 = tns({
     container: ".reviews__my-slider",
     items: 1,
     slideBy: "page",
     loop: false,
     controls: false,
-    navAsThumbnails: true,
     nav: true,
     navPosition: "bottom",
     mouseDrag: true,
@@ -35,16 +33,16 @@ var slider = tns({
     edgePadding: 20,
     arrowKeys: true,
     responsive: {
-        1301: {
-            items: 4,
-        },
         501: {
             items: 2,
+        },
+        1301: {
+            items: 4,
         },
     },
 });
 
-var slider = tns({
+var slider3 = tns({
     container: ".examples__my-slider",
     items: 1,
     slideBy: "page",

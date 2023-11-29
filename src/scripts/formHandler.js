@@ -12,21 +12,60 @@ const telInput = document.querySelector(".tel-input");
 const areaInput = document.querySelector(".area-input");
 const cityInput = document.querySelector(".city-input");
 
+function isFieldCorrect(field) {
+    const errorMes = field.nextElementSibling;
+    if (field.classList.contains("tel-input")) {
+        const onlyNums = Array.from(field.value.replace(/\D/g, ''));
+        if (onlyNums.length < 11) {
+            errorMes.classList.remove("none");
+            return false;
+        }
+    }
+    if (field.value === "") {
+        errorMes.classList.remove("none");
+        return false;
+    }
+    if (!errorMes.classList.contains("none")) errorMes.classList.add("none");
+    return true;
+}
+
+function isAgreementChecked() {
+    if (checkbox.checked) return true;
+    if (!checkbox.classList.contains("form__checkbox_error")) checkbox.classList.add("form__checkbox_error");
+    return false;
+}
+
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    modalSend.classList.remove("none");
-    body.classList.add("no-scroll");
-    setTimeout(() => {
-        if (!modalSend.classList.contains("none")) {
-            modalSend.classList.add("none");
-            body.classList.remove("no-scroll");
-        }
-    }, 2000);
-    Array.from(inputs).forEach((el) => {
-        el.value = "";
+    const dataField = Array.from(inputs);
+    const isValidData = dataField.map(el => isFieldCorrect(el));
+    const isCheckboxChecked = isAgreementChecked();
+    if (isValidData.every(el => el === true) && isCheckboxChecked) {
+        modalSend.classList.remove("none");
+        body.classList.add("no-scroll");
+        setTimeout(() => {
+            if (!modalSend.classList.contains("none")) {
+                modalSend.classList.add("none");
+                body.classList.remove("no-scroll");
+            }
+        }, 2000);
+        Array.from(inputs).forEach((el) => {
+            el.value = "";
+        })
+        textarea.value = "";
+        checkbox.checked = false;
+    }
+})
+
+inputs.forEach(input => {
+    input.addEventListener("input", (e) => {
+        const errorMes = e.target.nextElementSibling;
+        if (!errorMes.classList.contains("none")) errorMes.classList.add("none");
     })
-    textarea.value = "";
-    checkbox.checked = false;
+})
+
+checkbox.addEventListener("click", (e) => {
+    if (e.target.classList.contains("form__checkbox_error")) e.target.classList.remove("form__checkbox_error");
 })
 
 agreementLink.addEventListener("click", (e) => {
@@ -88,14 +127,14 @@ function formatPhoneNumber(input) {
 telInput.addEventListener("focus", (e) => {
     if (e.target.value === "") {
         e.target.value = "+7(___)___-__-__";
+        setTimeout(function() {
+            if (e.target.setSelectionRange) {
+                e.target.setSelectionRange(3, 3);
+            } else {
+                e.target.focus();
+                e.target.select();
+            }
+        }, 0);
     }
-    setTimeout(function() {
-        if (e.target.setSelectionRange) {
-            e.target.setSelectionRange(3, 3);
-        } else {
-            e.target.focus();
-            e.target.select();
-        }
-    }, 0);
 });
 telInput.addEventListener("input", (e) => formatPhoneNumber(e));

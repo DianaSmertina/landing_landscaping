@@ -1493,28 +1493,40 @@
                             </div>
                             <form class="form data__info">
                                 <div class="form__block">
-                                    <input
-                                        type="text"
-                                        placeholder="Имя"
-                                        class="form__input name-input"
-                                    />
-                                    <input
-                                        type="tel"
-                                        placeholder="Телефон"
-                                        class="form__input tel-input"
-                                    />
+                                    <div class="form__input-wrapper">
+                                        <input
+                                            type="text"
+                                            placeholder="Имя"
+                                            class="form__input name-input"
+                                        />
+                                        <div class="form__input-div name-input__div none">Введите имя</div>
+                                    </div>
+                                    <div class="form__input-wrapper">
+                                        <input
+                                            type="tel"
+                                            placeholder="Телефон"
+                                            class="form__input tel-input"
+                                        />
+                                        <div class="form__input-div tel-input__div none">Введите все цифры телефона</div>
+                                    </div>
                                 </div>
                                 <div class="form__block">
-                                    <input
-                                        type="text"
-                                        placeholder="Площадь участка, в гектарах"
-                                        class="form__input area-input"
-                                    />
-                                    <input
-                                        type="text"
-                                        placeholder="Населённый пункт"
-                                        class="form__input city-input"
-                                    />
+                                    <div class="form__input-wrapper">
+                                        <input
+                                            type="text"
+                                            placeholder="Площадь участка, в гектарах"
+                                            class="form__input area-input"
+                                        />
+                                        <div class="form__input-div area-input__div none">Введите площадь участка</div>
+                                    </div>
+                                    <div class="form__input-wrapper">
+                                        <input
+                                            type="text"
+                                            placeholder="Населённый пункт"
+                                            class="form__input city-input"
+                                        />
+                                        <div class="form__input-div city-input__div none">Введите населённый пункт</div>
+                                    </div>
                                 </div>
                                 <div class="form__textarea-block">
                                     <p class="form__textarea-title">
@@ -1671,7 +1683,6 @@
                         </li>
                     </ul>
                 </div>
-            <!-- </div> -->
         </main>
         <footer class="footer">
             <div class="content-wrapper footer-wrapper">

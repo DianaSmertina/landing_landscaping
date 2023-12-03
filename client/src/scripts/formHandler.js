@@ -73,7 +73,7 @@ form.addEventListener("submit", async (e) => {
     const isCheckboxChecked = isAgreementChecked();
     if (isValidData.every(el => el === true) && isCheckboxChecked) {
         try {
-            const response = await fetch('http://localhost:5000/submit', {
+            const response = await fetch('https://mail-server-g35u.onrender.com/submit', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',

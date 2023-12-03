@@ -35,25 +35,66 @@ function isAgreementChecked() {
     return false;
 }
 
-form.addEventListener("submit", (e) => {
+const submitSuccess = () => {
+    modalSend.classList.remove("none");
+    body.classList.add("no-scroll");
+    setTimeout(() => {
+        if (!modalSend.classList.contains("none")) {
+            modalSend.classList.add("none");
+            body.classList.remove("no-scroll");
+        }
+    }, 3000);
+    Array.from(inputs).forEach((el) => {
+        el.value = "";
+    })
+    textarea.value = "";
+    checkbox.checked = false;
+}
+
+const submitReject = (error) => {
+    const textField = document.querySelector(".send-modal__subtitle");
+    textField.innerText = error;
+    const title = document.querySelector(".send-modal__title");
+    title.innerText = '';
+    modalSend.classList.remove("none");
+    body.classList.add("no-scroll");
+    setTimeout(() => {
+        if (!modalSend.classList.contains("none")) {
+            modalSend.classList.add("none");
+            body.classList.remove("no-scroll");
+        }
+    }, 5000);
+}
+
+form.addEventListener("submit", async (e) => {
     e.preventDefault();
     const dataField = Array.from(inputs);
     const isValidData = dataField.map(el => isFieldCorrect(el));
     const isCheckboxChecked = isAgreementChecked();
     if (isValidData.every(el => el === true) && isCheckboxChecked) {
-        modalSend.classList.remove("none");
-        body.classList.add("no-scroll");
-        setTimeout(() => {
-            if (!modalSend.classList.contains("none")) {
-                modalSend.classList.add("none");
-                body.classList.remove("no-scroll");
+        try {
+            const response = await fetch('http://localhost:5000/submit', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                name: nameInput.value,
+                tel: telInput.value,
+                area: areaInput.value,
+                city: cityInput.value, 
+                comments: textarea.value,
+              }),
+            });
+            if (response.status === 200) {
+                submitSuccess();
+            } else {
+                const errorObj = await response.json();
+                submitReject(errorObj.error);
             }
-        }, 2000);
-        Array.from(inputs).forEach((el) => {
-            el.value = "";
-        })
-        textarea.value = "";
-        checkbox.checked = false;
+        } catch (error) {
+            submitReject('Извините, произошла непредвиденная ошибка при отправке, пожалуйста, свяжитесь с нами в WhatsApp');
+        }
     }
 })
 

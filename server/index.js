@@ -8,20 +8,12 @@ const nodemailer = require('nodemailer');
 
 var whitelistDomain = [
   "http://localhost:9000",
-  "https://sweet-kheer-626c63.netlify.app",
+  "https://cheery-chebakia-015361.netlify.app",
 ];
 
 const app = express();
 
 app.use(bodyParser.json());
-
-const transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: process.env.EMAIL_ADDRESS,
-    pass: process.env.EMAIL_PASSWORD,
-  },
-});
 
 app.use(
   cors({
@@ -32,3 +24,53 @@ app.use(
       },
   })
 );
+
+const transporter = nodemailer.createTransport({
+  host: 'smtp.mail.ru',
+  port: 465,
+  secure: true,
+  auth: {
+    user: 'kust.tekh@mail.ru',
+    pass: process.env.PASSWORD,
+  }
+});
+
+const mailer = message => {
+  return new Promise((resolve, reject) => {
+    transporter.sendMail(message, (err, info) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(info);
+      }
+    });
+  });
+};
+
+app.post('/submit', async (req, res) => {
+  try {
+    const { name, tel, area, city, comments } = req.body;
+    const message = {
+      from: 'New application <kust.tekh@mail.ru>',
+      to: process.env.MAIL_TO,
+      subject: 'Новая заявка!',
+      text: `
+        Имя: ${name}
+        Телефон: ${tel}
+        Площадь участка: ${area}
+        Населенный пункт: ${city}
+        Комментарий: ${comments}
+      `,
+    };
+
+    const mailerResult = await mailer(message);
+    return res.status(200).json(mailerResult);
+  } catch (e) {
+    console.error(e);
+    return res.status(500).json({ error: 'Извините, произошла ошибка на сервере, пожалуйста, свяжитесь с нами в WhatsApp' });
+  }
+});
+
+app.listen(PORT, () => {
+  console.log(`Сервер запущен на http://localhost:${PORT}`);
+});

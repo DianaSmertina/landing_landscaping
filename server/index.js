@@ -1,8 +1,8 @@
 const express = require("express");
-const PORT = process.env.PORT || 5000;
-const cors = require("cors");
 const dotenv = require('dotenv');
 dotenv.config();
+const PORT = process.env.PORT || 5000;
+const cors = require("cors");
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 
@@ -30,7 +30,7 @@ const transporter = nodemailer.createTransport({
   port: 465,
   secure: true,
   auth: {
-    user: 'kust.tekh@mail.ru',
+    user: process.env.USER_MAIL,
     pass: process.env.PASSWORD,
   }
 });
@@ -51,7 +51,7 @@ app.post('/submit', async (req, res) => {
   try {
     const { name, tel, area, city, comments } = req.body;
     const message = {
-      from: 'New application <kust.tekh@mail.ru>',
+      from: `New application <${process.env.USER_MAIL}>`,
       to: process.env.MAIL_TO,
       subject: 'Новая заявка!',
       text: `
